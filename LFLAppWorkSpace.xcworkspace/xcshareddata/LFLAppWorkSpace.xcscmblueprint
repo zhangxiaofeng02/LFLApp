@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5390A776C118E96374427C8C6E28C855A384B449",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "c4ccc3fd-b13d-49bf-a705-f618d8f4424a++668" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5390A776C118E96374427C8C6E28C855A384B449" : 0,
     "c4ccc3fd-b13d-49bf-a705-f618d8f4424a++668" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BFAE1EAD-EA5F-4EC9-A4B2-DF4CCAEA96D5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5390A776C118E96374427C8C6E28C855A384B449" : "LFLApp\/",
     "c4ccc3fd-b13d-49bf-a705-f618d8f4424a++668" : "project\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "LFLAppWorkSpace",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LFLAppWorkSpace.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangxiaofeng02\/LFLApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5390A776C118E96374427C8C6E28C855A384B449"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.baidu.com\/myspace",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
