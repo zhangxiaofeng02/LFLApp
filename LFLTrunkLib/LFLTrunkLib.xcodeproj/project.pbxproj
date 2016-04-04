@@ -12,6 +12,16 @@
 		E1CD9A171CB29E9300580FDC /* LFLTestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A161CB29E9300580FDC /* LFLTestAppController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E1CD9A2F1CB2A80200580FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CD99EE1CB29B2D00580FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1CD9A281CB2A7A500580FDC;
+			remoteInfo = LFLTrunkBundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		E1CD99F41CB29B2D00580FDC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -31,10 +41,18 @@
 		E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLTrunkLib.m; sourceTree = "<group>"; };
 		E1CD9A151CB29E9300580FDC /* LFLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTestAppController.h; sourceTree = "<group>"; };
 		E1CD9A161CB29E9300580FDC /* LFLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTestAppController.m; sourceTree = "<group>"; };
+		E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFLTrunkBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E1CD99F31CB29B2D00580FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CD9A261CB2A7A500580FDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +68,7 @@
 				E1CD99F81CB29B2D00580FDC /* LFLTrunkLib */,
 				E1CD9A141CB29E6800580FDC /* LFLTrunkCommon */,
 				E1CD9A131CB29E6800580FDC /* LFLSrc */,
+				E1CD9A2A1CB2A7A500580FDC /* LFLTrunkBundle */,
 				E1CD99F71CB29B2D00580FDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */,
+				E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +107,13 @@
 			path = LFLTrunkCommon;
 			sourceTree = "<group>";
 		};
+		E1CD9A2A1CB2A7A500580FDC /* LFLTrunkBundle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LFLTrunkBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,11 +128,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				E1CD9A301CB2A80200580FDC /* PBXTargetDependency */,
 			);
 			name = LFLTrunkLib;
 			productName = LFLTrunkLib;
 			productReference = E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CD9A2E1CB2A7A500580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkBundle" */;
+			buildPhases = (
+				E1CD9A251CB2A7A500580FDC /* Sources */,
+				E1CD9A261CB2A7A500580FDC /* Frameworks */,
+				E1CD9A271CB2A7A500580FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFLTrunkBundle;
+			productName = LFLTrunkBundle;
+			productReference = E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -117,6 +162,9 @@
 				ORGANIZATIONNAME = "张啸峰";
 				TargetAttributes = {
 					E1CD99F51CB29B2D00580FDC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E1CD9A281CB2A7A500580FDC = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -134,9 +182,20 @@
 			projectRoot = "";
 			targets = (
 				E1CD99F51CB29B2D00580FDC /* LFLTrunkLib */,
+				E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1CD9A271CB2A7A500580FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1CD99F21CB29B2D00580FDC /* Sources */ = {
@@ -148,7 +207,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1CD9A251CB2A7A500580FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1CD9A301CB2A80200580FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */;
+			targetProxy = E1CD9A2F1CB2A80200580FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E1CD99FD1CB29B2D00580FDC /* Debug */ = {
@@ -251,6 +325,38 @@
 			};
 			name = Release;
 		};
+		E1CD9A2C1CB2A7A500580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLTrunkBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E1CD9A2D1CB2A7A500580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLTrunkBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -271,6 +377,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E1CD9A2E1CB2A7A500580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD9A2C1CB2A7A500580FDC /* Debug */,
+				E1CD9A2D1CB2A7A500580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
