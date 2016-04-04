@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1CD99CB1CB292F200580FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99CA1CB292F200580FDC /* main.m */; };
+		E1CD99CE1CB292F200580FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99CD1CB292F200580FDC /* AppDelegate.m */; };
+		E1CD99D41CB292F200580FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CD99D21CB292F200580FDC /* Main.storyboard */; };
+		E1CD99D61CB292F200580FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CD99D51CB292F200580FDC /* Assets.xcassets */; };
+		E1CD99D91CB292F200580FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CD99D71CB292F200580FDC /* LaunchScreen.storyboard */; };
+		E1CD99EC1CB2963700580FDC /* LFLAppShellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99EB1CB2963700580FDC /* LFLAppShellViewController.m */; };
+		E1CD9A231CB2A07F00580FDC /* libLFLTrunkLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CD9A101CB29CE100580FDC /* libLFLTrunkLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1CD9A0F1CB29CE100580FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E1CD99F61CB29B2D00580FDC;
+			remoteInfo = LFLTrunkLib;
+		};
+		E1CD9A111CB29D5200580FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E1CD99F51CB29B2D00580FDC;
+			remoteInfo = LFLTrunkLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1CD99C61CB292F200580FDC /* LFLAppShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFLAppShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CD99CA1CB292F200580FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1CD99CC1CB292F200580FDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1CD99CD1CB292F200580FDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1CD99D31CB292F200580FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1CD99D51CB292F200580FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1CD99D81CB292F200580FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1CD99DA1CB292F200580FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1CD99EA1CB2963700580FDC /* LFLAppShellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLAppShellViewController.h; sourceTree = "<group>"; };
+		E1CD99EB1CB2963700580FDC /* LFLAppShellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLAppShellViewController.m; sourceTree = "<group>"; };
+		E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LFLTrunkLib.xcodeproj; path = ../../../LFLTrunkLib/LFLTrunkLib.xcodeproj; sourceTree = "<group>"; };
+		E1CD9A221CB29F2A00580FDC /* LFLAppShellPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLAppShellPrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1CD99C31CB292F200580FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CD9A231CB2A07F00580FDC /* libLFLTrunkLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1CD99BD1CB292F200580FDC = {
+			isa = PBXGroup;
+			children = (
+				E1CD99C81CB292F200580FDC /* LFLAppShell */,
+				E1CD9A041CB29BB100580FDC /* FrameWork */,
+				E1CD99C71CB292F200580FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1CD99C71CB292F200580FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD99C61CB292F200580FDC /* LFLAppShell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1CD99C81CB292F200580FDC /* LFLAppShell */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD99CC1CB292F200580FDC /* AppDelegate.h */,
+				E1CD99CD1CB292F200580FDC /* AppDelegate.m */,
+				E1CD99EA1CB2963700580FDC /* LFLAppShellViewController.h */,
+				E1CD99EB1CB2963700580FDC /* LFLAppShellViewController.m */,
+				E1CD99D21CB292F200580FDC /* Main.storyboard */,
+				E1CD99D51CB292F200580FDC /* Assets.xcassets */,
+				E1CD99D71CB292F200580FDC /* LaunchScreen.storyboard */,
+				E1CD99DA1CB292F200580FDC /* Info.plist */,
+				E1CD99C91CB292F200580FDC /* Supporting Files */,
+			);
+			path = LFLAppShell;
+			sourceTree = "<group>";
+		};
+		E1CD99C91CB292F200580FDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD99CA1CB292F200580FDC /* main.m */,
+				E1CD9A221CB29F2A00580FDC /* LFLAppShellPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1CD9A041CB29BB100580FDC /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */,
+			);
+			name = FrameWork;
+			path = LFLAppShell/FrameWork;
+			sourceTree = "<group>";
+		};
+		E1CD9A0C1CB29CE100580FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD9A101CB29CE100580FDC /* libLFLTrunkLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1CD99C51CB292F200580FDC /* LFLAppShell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CD99DD1CB292F200580FDC /* Build configuration list for PBXNativeTarget "LFLAppShell" */;
+			buildPhases = (
+				E1CD99C21CB292F200580FDC /* Sources */,
+				E1CD99C31CB292F200580FDC /* Frameworks */,
+				E1CD99C41CB292F200580FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1CD9A121CB29D5200580FDC /* PBXTargetDependency */,
+			);
+			name = LFLAppShell;
+			productName = LFLAppShell;
+			productReference = E1CD99C61CB292F200580FDC /* LFLAppShell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1CD99BE1CB292F200580FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张啸峰";
+				TargetAttributes = {
+					E1CD99C51CB292F200580FDC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E1CD99C11CB292F200580FDC /* Build configuration list for PBXProject "LFLAppShell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1CD99BD1CB292F200580FDC;
+			productRefGroup = E1CD99C71CB292F200580FDC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1CD9A0C1CB29CE100580FDC /* Products */;
+					ProjectRef = E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E1CD99C51CB292F200580FDC /* LFLAppShell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1CD9A101CB29CE100580FDC /* libLFLTrunkLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLFLTrunkLib.a;
+			remoteRef = E1CD9A0F1CB29CE100580FDC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1CD99C41CB292F200580FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CD99D91CB292F200580FDC /* LaunchScreen.storyboard in Resources */,
+				E1CD99D61CB292F200580FDC /* Assets.xcassets in Resources */,
+				E1CD99D41CB292F200580FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1CD99C21CB292F200580FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CD99EC1CB2963700580FDC /* LFLAppShellViewController.m in Sources */,
+				E1CD99CE1CB292F200580FDC /* AppDelegate.m in Sources */,
+				E1CD99CB1CB292F200580FDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1CD9A121CB29D5200580FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LFLTrunkLib;
+			targetProxy = E1CD9A111CB29D5200580FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1CD99D21CB292F200580FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1CD99D31CB292F200580FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1CD99D71CB292F200580FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1CD99D81CB292F200580FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1CD99DB1CB292F200580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1CD99DC1CB292F200580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1CD99DE1CB292F200580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "./../LFLTrunkLib/**";
+				INFOPLIST_FILE = LFLAppShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1CD99DF1CB292F200580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "./../LFLTrunkLib/**";
+				INFOPLIST_FILE = LFLAppShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1CD99C11CB292F200580FDC /* Build configuration list for PBXProject "LFLAppShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD99DB1CB292F200580FDC /* Debug */,
+				E1CD99DC1CB292F200580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1CD99DD1CB292F200580FDC /* Build configuration list for PBXNativeTarget "LFLAppShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD99DE1CB292F200580FDC /* Debug */,
+				E1CD99DF1CB292F200580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1CD99BE1CB292F200580FDC /* Project object */;
+}
