@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "LFLTestAppController.h"
+#import "LFLTrunkBundle.h"
+#import "LFLMainTabBarController.h"
+#import "LFLMainNavigationController.h"
+#import "LFLTrunkBundle.h"
 
 @interface LFLTrunkLib : NSObject
-
 @end
