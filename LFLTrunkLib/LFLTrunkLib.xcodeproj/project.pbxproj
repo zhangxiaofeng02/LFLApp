@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		E1CD99FA1CB29B2D00580FDC /* LFLTrunkLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */; };
 		E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */; };
-		E1CD9A171CB29E9300580FDC /* LFLTestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A161CB29E9300580FDC /* LFLTestAppController.m */; };
+		E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */; };
+		E1CD9A3F1CB2CAB400580FDC /* LFLMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A3E1CB2CAB400580FDC /* LFLMainTabBarController.m */; };
+		E1CD9A421CB2CAD100580FDC /* LFLMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A411CB2CAD100580FDC /* LFLMainNavigationController.m */; };
+		E1CD9A901CB51FD100580FDC /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD9A8E1CB51FD100580FDC /* test@2x.png */; };
+		E1CD9A911CB51FD100580FDC /* test@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD9A8F1CB51FD100580FDC /* test@3x.png */; };
+		E1CD9A941CB5204400580FDC /* LFLTestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A931CB5204400580FDC /* LFLTestAppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +44,18 @@
 		E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLTrunkLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLTrunkLib.h; sourceTree = "<group>"; };
 		E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLTrunkLib.m; sourceTree = "<group>"; };
-		E1CD9A151CB29E9300580FDC /* LFLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTestAppController.h; sourceTree = "<group>"; };
-		E1CD9A161CB29E9300580FDC /* LFLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTestAppController.m; sourceTree = "<group>"; };
 		E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFLTrunkBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CD9A391CB2B4EA00580FDC /* LFLTrunkBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTrunkBundle.h; sourceTree = "<group>"; };
+		E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTrunkBundle.m; sourceTree = "<group>"; };
+		E1CD9A3C1CB2B50500580FDC /* LFLTrunkLibPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTrunkLibPrefixHeader.pch; sourceTree = "<group>"; };
+		E1CD9A3D1CB2CAB400580FDC /* LFLMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLMainTabBarController.h; sourceTree = "<group>"; };
+		E1CD9A3E1CB2CAB400580FDC /* LFLMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLMainTabBarController.m; sourceTree = "<group>"; };
+		E1CD9A401CB2CAD100580FDC /* LFLMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLMainNavigationController.h; sourceTree = "<group>"; };
+		E1CD9A411CB2CAD100580FDC /* LFLMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLMainNavigationController.m; sourceTree = "<group>"; };
+		E1CD9A8E1CB51FD100580FDC /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		E1CD9A8F1CB51FD100580FDC /* test@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@3x.png"; sourceTree = "<group>"; };
+		E1CD9A921CB5204400580FDC /* LFLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTestAppController.h; sourceTree = "<group>"; };
+		E1CD9A931CB5204400580FDC /* LFLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTestAppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +101,7 @@
 			children = (
 				E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */,
 				E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */,
+				E1CD9A3C1CB2B50500580FDC /* LFLTrunkLibPrefixHeader.pch */,
 			);
 			path = LFLTrunkLib;
 			sourceTree = "<group>";
@@ -94,8 +109,12 @@
 		E1CD9A131CB29E6800580FDC /* LFLSrc */ = {
 			isa = PBXGroup;
 			children = (
-				E1CD9A151CB29E9300580FDC /* LFLTestAppController.h */,
-				E1CD9A161CB29E9300580FDC /* LFLTestAppController.m */,
+				E1CD9A921CB5204400580FDC /* LFLTestAppController.h */,
+				E1CD9A931CB5204400580FDC /* LFLTestAppController.m */,
+				E1CD9A3D1CB2CAB400580FDC /* LFLMainTabBarController.h */,
+				E1CD9A3E1CB2CAB400580FDC /* LFLMainTabBarController.m */,
+				E1CD9A401CB2CAD100580FDC /* LFLMainNavigationController.h */,
+				E1CD9A411CB2CAD100580FDC /* LFLMainNavigationController.m */,
 			);
 			path = LFLSrc;
 			sourceTree = "<group>";
@@ -103,6 +122,8 @@
 		E1CD9A141CB29E6800580FDC /* LFLTrunkCommon */ = {
 			isa = PBXGroup;
 			children = (
+				E1CD9A391CB2B4EA00580FDC /* LFLTrunkBundle.h */,
+				E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */,
 			);
 			path = LFLTrunkCommon;
 			sourceTree = "<group>";
@@ -110,6 +131,8 @@
 		E1CD9A2A1CB2A7A500580FDC /* LFLTrunkBundle */ = {
 			isa = PBXGroup;
 			children = (
+				E1CD9A8E1CB51FD100580FDC /* test@2x.png */,
+				E1CD9A8F1CB51FD100580FDC /* test@3x.png */,
 			);
 			path = LFLTrunkBundle;
 			sourceTree = "<group>";
@@ -192,6 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CD9A901CB51FD100580FDC /* test@2x.png in Resources */,
+				E1CD9A911CB51FD100580FDC /* test@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1CD9A171CB29E9300580FDC /* LFLTestAppController.m in Sources */,
 				E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */,
+				E1CD9A421CB2CAD100580FDC /* LFLMainNavigationController.m in Sources */,
+				E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */,
+				E1CD9A3F1CB2CAB400580FDC /* LFLMainTabBarController.m in Sources */,
+				E1CD9A941CB5204400580FDC /* LFLTestAppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +338,8 @@
 		E1CD9A001CB29B2D00580FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLTrunkLib/LFLTrunkLibPrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -319,6 +349,8 @@
 		E1CD9A011CB29B2D00580FDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLTrunkLib/LFLTrunkLibPrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -385,6 +417,7 @@
 				E1CD9A2D1CB2A7A500580FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
