@@ -30,14 +30,6 @@ static const int kStateKey;
 
 @implementation UIScrollView (TPKeyboardAvoidingAdditions)
 
-+ (void)initialize {
-    NSLog(@"2");
-}
-
-+ (void)load {
-    NSLog(@"这个分类根本没有被load进去");
-}
-
 - (TPKeyboardAvoidingState*)keyboardAvoidingState {
     TPKeyboardAvoidingState *state = objc_getAssociatedObject(self, &kStateKey);
     if ( !state ) {

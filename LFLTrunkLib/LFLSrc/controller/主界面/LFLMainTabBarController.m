@@ -8,13 +8,10 @@
 
 #import "LFLMainTabBarController.h"
 #import "LFLTestAppController.h"
+#import "LFLUserCenterViewController.h"
 
 @interface LFLMainTabBarController ()
 
-@property (nonatomic, strong) LFLTestAppController *vc;
-@property (nonatomic, strong) LFLTestAppController *vc2;
-@property (nonatomic, strong) LFLTestAppController *vc3;
-@property (nonatomic, strong) LFLTestAppController *vc4;
 @end
 
 @implementation LFLMainTabBarController
@@ -29,18 +26,18 @@
 }
 
 - (void)initChildControllers {
-    _vc = [[LFLTestAppController alloc] init];
-    [self addChildController:_vc image:@"test" selectedImageName:@"test" title:@"精选"];
+    LFLTestAppController *vc = [[LFLTestAppController alloc] init];
+    [self addChildController:vc image:@"test" selectedImageName:@"test" title:@"精选"];
     
-    _vc2 = [[LFLTestAppController alloc] init];
-    [self addChildController:_vc2 image:@"test" selectedImageName:@"test" title:@"客服"];
+    LFLTestAppController *vc2 = [[LFLTestAppController alloc] init];
+    [self addChildController:vc2 image:@"test" selectedImageName:@"test" title:@"客服"];
 
     
-    _vc3 = [[LFLTestAppController alloc] init];
-    [self addChildController:_vc3 image:@"test" selectedImageName:@"test" title:@"发现"];
+    LFLTestAppController *vc3 = [[LFLTestAppController alloc] init];
+    [self addChildController:vc3 image:@"test" selectedImageName:@"test" title:@"发现"];
 
-    _vc4 = [[LFLTestAppController alloc] init];
-    [self addChildController:_vc4 image:@"test" selectedImageName:@"test" title:@"我"];
+    LFLUserCenterViewController *userCenterViewController = [[LFLUserCenterViewController alloc] init];
+    [self addChildController:userCenterViewController image:@"test" selectedImageName:@"test" title:@"我"];
 }
 
 - (void)addChildController:(UIViewController *)vc image:(NSString *)imageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title {
