@@ -57,6 +57,8 @@
     LFLBaseTableView *tableView = [[LFLBaseTableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)
                                                                     style:self.tableViewStyle];
     self.tableView = tableView;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:tableView];
     [tableView setTranslatesAutoresizingMaskIntoConstraints:NO];
     NSDictionary *viewsDic = NSDictionaryOfVariableBindings(self.view,tableView);

@@ -18,6 +18,7 @@
 		E1096CE81CB62ADA00484BDB /* LFLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE21CB62AD900484BDB /* LFLBaseTableView.m */; };
 		E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */; };
 		E1096CEA1CB62ADA00484BDB /* LFLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */; };
+		E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseTableViewController.m; sourceTree = "<group>"; };
 		E1096CE51CB62AD900484BDB /* LFLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLBaseViewController.h; sourceTree = "<group>"; };
 		E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseViewController.m; sourceTree = "<group>"; };
+		E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LFLRegister.h"; sourceTree = "<group>"; };
+		E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LFLRegister.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 		E1096CAF1CB6146800484BDB /* LFLSrc */ = {
 			isa = PBXGroup;
 			children = (
+				E1096D021CB6444000484BDB /* Categroy */,
 				E1096CDE1CB62AD900484BDB /* LFLBaseView */,
 				E1096CB21CB6153300484BDB /* LFLGlobal.h */,
 				E1096CB31CB6153300484BDB /* LFLGlobal.m */,
@@ -143,6 +147,15 @@
 				E1096CE21CB62AD900484BDB /* LFLBaseTableView.m */,
 			);
 			path = LFLBaseView;
+			sourceTree = "<group>";
+		};
+		E1096D021CB6444000484BDB /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */,
+				E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */,
+			);
+			path = Categroy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +223,7 @@
 				E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */,
 				E1096CBF1CB615C300484BDB /* TPKeyboardAvoidingScrollView.m in Sources */,
 				E1096CBE1CB615C300484BDB /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */,
 				E1096CB41CB6153300484BDB /* LFLGlobal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

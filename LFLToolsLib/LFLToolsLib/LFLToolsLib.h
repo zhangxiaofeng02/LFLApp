@@ -16,5 +16,8 @@
 #import "LFLBaseTableView.h"
 #import "LFLBaseTableViewController.h"
 
+//category
+#import "UITableView+LFLRegister.h"
+
 @interface LFLToolsLib : NSObject
 @end
