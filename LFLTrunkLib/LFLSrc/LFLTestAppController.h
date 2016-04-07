@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LFLBaseTableViewController.h"
 
-@interface LFLTestAppController : UIViewController
+@interface LFLTestAppController : LFLBaseTableViewController
 
 @end

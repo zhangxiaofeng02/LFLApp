@@ -19,4 +19,13 @@
 
     //bundle
     #import "LFLTrunkBundle.h"
+    //tools
+    #import "LFLToolsLib.h"
+    //base
+    #import "LFLBaseViewController.h"
+    #import "LFLBaseNavigationController.h"
+    #import "LFLMainTabBarController.h"
+    #import "LFLBaseTableView.h"
+    #import "LFLBaseTableViewController.h"
+
 #endif

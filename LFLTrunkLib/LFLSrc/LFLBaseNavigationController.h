@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LFLMainNavigationController : UINavigationController
+@interface LFLBaseNavigationController : UINavigationController
 
 @end
