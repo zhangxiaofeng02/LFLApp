@@ -6,13 +6,13 @@
 //  Copyright © 2016年 张啸峰. All rights reserved.
 //
 
-#import "LFLMainNavigationController.h"
+#import "LFLBaseNavigationController.h"
 
-@interface LFLMainNavigationController ()
+@interface LFLBaseNavigationController ()
 
 @end
 
-@implementation LFLMainNavigationController
+@implementation LFLBaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

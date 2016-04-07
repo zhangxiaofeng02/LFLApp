@@ -8,17 +8,20 @@
 
 #import "LFLMainTabBarController.h"
 #import "LFLTestAppController.h"
-#import "LFLMainNavigationController.h"
 
 @interface LFLMainTabBarController ()
 
+@property (nonatomic, strong) LFLTestAppController *vc;
+@property (nonatomic, strong) LFLTestAppController *vc2;
+@property (nonatomic, strong) LFLTestAppController *vc3;
+@property (nonatomic, strong) LFLTestAppController *vc4;
 @end
 
 @implementation LFLMainTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initChildControllers];
+    [self initChildControllers]; 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,27 +29,26 @@
 }
 
 - (void)initChildControllers {
-    LFLTestAppController *vc = [[LFLTestAppController alloc] init];
-    [self addChildController:vc image:@"test" selectedImageName:@"test" title:@"第1页"];
+    _vc = [[LFLTestAppController alloc] init];
+    [self addChildController:_vc image:@"test" selectedImageName:@"test" title:@"精选"];
     
-    LFLTestAppController *vc2 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc2 image:@"test" selectedImageName:@"test" title:@"第2页"];
+    _vc2 = [[LFLTestAppController alloc] init];
+    [self addChildController:_vc2 image:@"test" selectedImageName:@"test" title:@"客服"];
+
     
-    LFLTestAppController *vc3 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc3 image:@"test" selectedImageName:@"test" title:@"第3页"];
-    
-    LFLTestAppController *vc4 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc4 image:@"test" selectedImageName:@"test" title:@"第4页"];
-    
-    LFLTestAppController *vc5 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc5 image:@"test" selectedImageName:@"test" title:@"第5页"];
+    _vc3 = [[LFLTestAppController alloc] init];
+    [self addChildController:_vc3 image:@"test" selectedImageName:@"test" title:@"发现"];
+
+    _vc4 = [[LFLTestAppController alloc] init];
+    [self addChildController:_vc4 image:@"test" selectedImageName:@"test" title:@"我"];
 }
 
 - (void)addChildController:(UIViewController *)vc image:(NSString *)imageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title {
     vc.title = title;
     vc.tabBarItem.selectedImage = [LFLTrunkBundle imageName:@"test"];
     vc.tabBarItem.image = [LFLTrunkBundle imageName:@"test"];
-    LFLMainNavigationController *nav = [[LFLMainNavigationController alloc] initWithRootViewController:vc];
+    LFLBaseNavigationController *nav = [[LFLBaseNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
+
 @end
