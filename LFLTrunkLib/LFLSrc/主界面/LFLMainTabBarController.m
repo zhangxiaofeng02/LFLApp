@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initChildControllers]; 
+    [self initChildControllers];
 }
 
 - (void)didReceiveMemoryWarning {

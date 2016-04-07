@@ -7,7 +7,6 @@
 //
 #import <UIKit/UIKit.h>
 #import "TPKeyboardAvoidingTableView.h"
-#import "UIScrollView+TPKeyboardAvoidingAdditions.h"
 
 @interface LFLBaseTableView : TPKeyboardAvoidingTableView
 
