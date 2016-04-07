@@ -7,7 +7,6 @@
 //
 
 #import "LFLBaseViewController.h"
-@class LFLBaseTableView;
 
 @interface LFLBaseTableViewController : LFLBaseViewController <UITableViewDelegate,UITableViewDataSource>
 

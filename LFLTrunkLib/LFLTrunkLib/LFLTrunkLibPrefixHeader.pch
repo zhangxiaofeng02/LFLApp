@@ -15,17 +15,12 @@
 #endif /* LFLTrunkLibPrefixHeader_pch */
 
 #ifdef __OBJC__
+    #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 
     //bundle
     #import "LFLTrunkBundle.h"
     //tools
     #import "LFLToolsLib.h"
-    //base
-    #import "LFLBaseViewController.h"
-    #import "LFLBaseNavigationController.h"
-    #import "LFLMainTabBarController.h"
-    #import "LFLBaseTableView.h"
-    #import "LFLBaseTableViewController.h"
 
 #endif
