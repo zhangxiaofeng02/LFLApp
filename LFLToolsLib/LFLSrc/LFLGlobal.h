@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef DEBUG
+#define debugAssert(e) assert(e)
+#else
+#define debugAssert(e) (void(0))
+#endif
+
+#ifdef DEBUG
+#define LFLLog(s, ...) NSLog( @"%s - %@ - %@",__func__, NSStringFromSelector(_cmd),[NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define LFLLog(s, ...)
+#endif
+
 #define ScreenWidth [[UIScreen mainScreen]bounds].size.width
 #define ScreenHeight [[UIScreen mainScreen]bounds].size.height
 #define ScreenScale [UIScreen mainScreen].scale

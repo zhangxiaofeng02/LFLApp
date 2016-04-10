@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "LFLFetcher.h"
+#import "LFLFetcherManager.h"
+#import "LFLFetcher+NetWork.h"
+
 @interface LFLFetcherLib : NSObject
 
 @end

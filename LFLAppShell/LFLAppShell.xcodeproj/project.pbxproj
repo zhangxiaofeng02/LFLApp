@@ -394,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"./../LFLToolsLib/**",
 					"./../LFLTrunkLib/**",
 					"./../LFLToolsLib/ThirdLibs/**",
@@ -403,7 +404,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -415,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"./../LFLToolsLib/**",
 					"./../LFLTrunkLib/**",
 					"./../LFLToolsLib/ThirdLibs/**",
@@ -424,7 +426,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -12,6 +12,7 @@
 @interface LFLUserCenterViewController()
 
 @property (nonatomic, strong) NSArray *dataArr;
+@property (nonatomic, strong) LFLFetcher *fetcher;
 @end
 
 @implementation LFLUserCenterViewController
@@ -25,6 +26,7 @@
     [self.tableView setBackgroundColor:Color(239.0f, 239.0f, 244.0f, 1)];
     [self registerCell];
     
+    self.fetcher = [[LFLFetcherManager shareInstance] fetcherWithObject:self];
 }
 
 #pragma mark - 注册cell
@@ -79,5 +81,28 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if ([indexPath section] == 3) {
+        [self.fetcher getFromUrl:@"http://apistore.baidu.com/microservice/cityinfo?cityname=beijing"
+                     withParamer:nil
+               withRequestHeader:nil
+                   inSerialQueue:YES
+             withProgressHandler:nil
+              withSuccessHandler:^(NSDictionary *dict) {
+                  LFLLog(@"1");
+              }
+               withFailedHandler:^(NSError *error) {
+                   LFLLog(@"2");
+               }];
+//        NSDictionary *postDict = @{ @"urls": @"http://www.henishuo.com/git-use-inwork/",
+//                                    @"goal" : @"site",
+//                                    @"total" : @(123)
+//                                    };
+//        [self.fetcher postToUrl:@"http://data.zz.baidu.com/urls?site=www.henishuo.com&token=bRidefmXoNxIi3Jp" withParamer:postDict withRequestHeader:nil isSerialQueue:YES withProgressHandler:nil
+//             withSuccessHandler:^(NSDictionary *dict) {
+//                 LFLLog(@"1");
+//        } withFailedHandler:^(NSError *error) {
+//                LFLLog(@"1");
+//        }];
+    }
 }
 @end

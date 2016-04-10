@@ -7,28 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E10629121CB7618300239297 /* LFLFetcherLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E10629111CB7618300239297 /* LFLFetcherLib.h */; };
+		8A09B85F21F762A972B31318 /* libPods-LFLFetcherLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD894DDA2148D51F3DF63BF /* libPods-LFLFetcherLib.a */; };
+		E10629121CB7618300239297 /* LFLFetcherLib.h in Copy Files */ = {isa = PBXBuildFile; fileRef = E10629111CB7618300239297 /* LFLFetcherLib.h */; };
 		E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E10629131CB7618300239297 /* LFLFetcherLib.m */; };
+		E10CADD61CBA1ABE00A089DD /* LFLFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADD51CBA1ABE00A089DD /* LFLFetcher.m */; };
+		E10CADD91CBA1AD100A089DD /* LFLFetcherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADD81CBA1AD100A089DD /* LFLFetcherManager.m */; };
+		E10CADDC1CBA3A9B00A089DD /* LFLFetcher+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */; };
+		E17AF7771CBA48F10077FF38 /* LFLURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */; };
+		E17AF7BA1CBAA0E50077FF38 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E106290C1CB7618300239297 /* CopyFiles */ = {
+		E106290C1CB7618300239297 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				E10629121CB7618300239297 /* LFLFetcherLib.h in CopyFiles */,
+				E10629121CB7618300239297 /* LFLFetcherLib.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EFA44D8B0A8B3A5D9D14E31 /* Pods-LFLFetcherLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLFetcherLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLFetcherLib/Pods-LFLFetcherLib.debug.xcconfig"; sourceTree = "<group>"; };
+		A13026FB4164684F7830CC65 /* Pods-LFLFetcherLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLFetcherLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLFetcherLib/Pods-LFLFetcherLib.release.xcconfig"; sourceTree = "<group>"; };
 		E106290E1CB7618300239297 /* libLFLFetcherLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLFetcherLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10629111CB7618300239297 /* LFLFetcherLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLFetcherLib.h; sourceTree = "<group>"; };
 		E10629131CB7618300239297 /* LFLFetcherLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLFetcherLib.m; sourceTree = "<group>"; };
 		E10CADC21CBA119D00A089DD /* LFLFetcherPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLFetcherPrefixHeader.pch; sourceTree = "<group>"; };
+		E10CADD41CBA1ABE00A089DD /* LFLFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLFetcher.h; sourceTree = "<group>"; };
+		E10CADD51CBA1ABE00A089DD /* LFLFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLFetcher.m; sourceTree = "<group>"; };
+		E10CADD71CBA1AD100A089DD /* LFLFetcherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLFetcherManager.h; sourceTree = "<group>"; };
+		E10CADD81CBA1AD100A089DD /* LFLFetcherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLFetcherManager.m; sourceTree = "<group>"; };
+		E10CADDA1CBA3A9B00A089DD /* LFLFetcher+NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFLFetcher+NetWork.h"; sourceTree = "<group>"; };
+		E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFLFetcher+NetWork.m"; sourceTree = "<group>"; };
+		E17AF7751CBA48F10077FF38 /* LFLURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLURLMaker.h; sourceTree = "<group>"; };
+		E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLURLMaker.m; sourceTree = "<group>"; };
+		E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		FFD894DDA2148D51F3DF63BF /* libPods-LFLFetcherLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLFetcherLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +55,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17AF7BA1CBAA0E50077FF38 /* libAFNetworking.a in Frameworks */,
+				8A09B85F21F762A972B31318 /* libPods-LFLFetcherLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862385B3A24ECE9B588056BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */,
+				FFD894DDA2148D51F3DF63BF /* libPods-LFLFetcherLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED9B0D1341EF37C578D2CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EFA44D8B0A8B3A5D9D14E31 /* Pods-LFLFetcherLib.debug.xcconfig */,
+				A13026FB4164684F7830CC65 /* Pods-LFLFetcherLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E10629051CB7618300239297 = {
 			isa = PBXGroup;
 			children = (
 				E10629101CB7618300239297 /* LFLFetcherLib */,
+				E10CADC71CBA141400A089DD /* LFLSrc */,
+				E10CADC61CBA141400A089DD /* Framework */,
 				E106290F1CB7618300239297 /* Products */,
+				CED9B0D1341EF37C578D2CEB /* Pods */,
+				862385B3A24ECE9B588056BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +111,44 @@
 			path = LFLFetcherLib;
 			sourceTree = "<group>";
 		};
+		E10CADC61CBA141400A089DD /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		E10CADC71CBA141400A089DD /* LFLSrc */ = {
+			isa = PBXGroup;
+			children = (
+				E10CADD31CBA179100A089DD /* LFLNetWork */,
+				E17AF7741CBA48F10077FF38 /* LFLURLFactory */,
+				E10CADD41CBA1ABE00A089DD /* LFLFetcher.h */,
+				E10CADD51CBA1ABE00A089DD /* LFLFetcher.m */,
+				E10CADD71CBA1AD100A089DD /* LFLFetcherManager.h */,
+				E10CADD81CBA1AD100A089DD /* LFLFetcherManager.m */,
+			);
+			path = LFLSrc;
+			sourceTree = "<group>";
+		};
+		E10CADD31CBA179100A089DD /* LFLNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				E10CADDA1CBA3A9B00A089DD /* LFLFetcher+NetWork.h */,
+				E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */,
+			);
+			path = LFLNetWork;
+			sourceTree = "<group>";
+		};
+		E17AF7741CBA48F10077FF38 /* LFLURLFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7751CBA48F10077FF38 /* LFLURLMaker.h */,
+				E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */,
+			);
+			path = LFLURLFactory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E10629171CB7618300239297 /* Build configuration list for PBXNativeTarget "LFLFetcherLib" */;
 			buildPhases = (
+				164B7DB306FCA2AE7ADFBD50 /* Check Pods Manifest.lock */,
 				E106290A1CB7618300239297 /* Sources */,
 				E106290B1CB7618300239297 /* Frameworks */,
-				E106290C1CB7618300239297 /* CopyFiles */,
+				E106290C1CB7618300239297 /* Copy Files */,
+				831BD97B89A8253098C3A711 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -119,12 +202,49 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		164B7DB306FCA2AE7ADFBD50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		831BD97B89A8253098C3A711 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LFLFetcherLib/Pods-LFLFetcherLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E106290A1CB7618300239297 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10CADD61CBA1ABE00A089DD /* LFLFetcher.m in Sources */,
 				E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */,
+				E10CADD91CBA1AD100A089DD /* LFLFetcherManager.m in Sources */,
+				E17AF7771CBA48F10077FF38 /* LFLURLMaker.m in Sources */,
+				E10CADDC1CBA3A9B00A089DD /* LFLFetcher+NetWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,25 +335,45 @@
 		};
 		E10629181CB7618300239297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EFA44D8B0A8B3A5D9D14E31 /* Pods-LFLFetcherLib.debug.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLFetcherLib/LFLFetcherPrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "./../LFLToolsLib/**";
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"./../LFLToolsLib/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		E10629191CB7618300239297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13026FB4164684F7830CC65 /* Pods-LFLFetcherLib.release.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLFetcherLib/LFLFetcherPrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "./../LFLToolsLib/**";
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"./../LFLToolsLib/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
