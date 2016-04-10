@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10629121CB7618300239297 /* LFLFetcherLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E10629111CB7618300239297 /* LFLFetcherLib.h */; };
+		E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E10629131CB7618300239297 /* LFLFetcherLib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E106290C1CB7618300239297 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E10629121CB7618300239297 /* LFLFetcherLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E106290E1CB7618300239297 /* libLFLFetcherLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLFetcherLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10629111CB7618300239297 /* LFLFetcherLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLFetcherLib.h; sourceTree = "<group>"; };
+		E10629131CB7618300239297 /* LFLFetcherLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLFetcherLib.m; sourceTree = "<group>"; };
+		E10CADC21CBA119D00A089DD /* LFLFetcherPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLFetcherPrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E106290B1CB7618300239297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10629051CB7618300239297 = {
+			isa = PBXGroup;
+			children = (
+				E10629101CB7618300239297 /* LFLFetcherLib */,
+				E106290F1CB7618300239297 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E106290F1CB7618300239297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E106290E1CB7618300239297 /* libLFLFetcherLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10629101CB7618300239297 /* LFLFetcherLib */ = {
+			isa = PBXGroup;
+			children = (
+				E10629111CB7618300239297 /* LFLFetcherLib.h */,
+				E10629131CB7618300239297 /* LFLFetcherLib.m */,
+				E10CADC21CBA119D00A089DD /* LFLFetcherPrefixHeader.pch */,
+			);
+			path = LFLFetcherLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E106290D1CB7618300239297 /* LFLFetcherLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10629171CB7618300239297 /* Build configuration list for PBXNativeTarget "LFLFetcherLib" */;
+			buildPhases = (
+				E106290A1CB7618300239297 /* Sources */,
+				E106290B1CB7618300239297 /* Frameworks */,
+				E106290C1CB7618300239297 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFLFetcherLib;
+			productName = LFLFetcherLib;
+			productReference = E106290E1CB7618300239297 /* libLFLFetcherLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10629061CB7618300239297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张啸峰";
+				TargetAttributes = {
+					E106290D1CB7618300239297 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E10629091CB7618300239297 /* Build configuration list for PBXProject "LFLFetcherLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E10629051CB7618300239297;
+			productRefGroup = E106290F1CB7618300239297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E106290D1CB7618300239297 /* LFLFetcherLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E106290A1CB7618300239297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E10629151CB7618300239297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E10629161CB7618300239297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E10629181CB7618300239297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLFetcherLib/LFLFetcherPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "./../LFLToolsLib/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E10629191CB7618300239297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLFetcherLib/LFLFetcherPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "./../LFLToolsLib/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10629091CB7618300239297 /* Build configuration list for PBXProject "LFLFetcherLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10629151CB7618300239297 /* Debug */,
+				E10629161CB7618300239297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10629171CB7618300239297 /* Build configuration list for PBXNativeTarget "LFLFetcherLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10629181CB7618300239297 /* Debug */,
+				E10629191CB7618300239297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10629061CB7618300239297 /* Project object */;
+}
