@@ -1,0 +1,15 @@
+//
+//  LFLFetcherPrefixHeader.pch
+//  LFLFetcherLib
+//
+//  Created by 啸峰 on 16/4/10.
+//  Copyright © 2016年 张啸峰. All rights reserved.
+//
+
+#ifndef LFLFetcherPrefixHeader_pch
+#define LFLFetcherPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LFLFetcherPrefixHeader_pch */

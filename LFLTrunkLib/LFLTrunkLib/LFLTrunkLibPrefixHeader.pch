@@ -22,5 +22,7 @@
     #import "LFLTrunkBundle.h"
     //tools
     #import "LFLToolsLib.h"
+    //fetcher
+    #import "LFLFetcherLib.h"
 
 #endif
