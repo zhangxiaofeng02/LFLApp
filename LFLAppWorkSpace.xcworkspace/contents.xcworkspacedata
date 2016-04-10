@@ -8,9 +8,12 @@
       location = "group:LFLAppShell/LFLAppShell/FrameWork/../../../LFLTrunkLib/LFLTrunkLib.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LFLTrunkLib/FrameWork/../../LFLFetcherLib/LFLFetcherLib.xcodeproj">
+      location = "group:LFLTrunkLib/LFLFrameWorks/../../LFLFetcherLib/LFLFetcherLib.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LFLAppShell/LFLAppShell/FrameWork/../../../LFLToolsLib/LFLToolsLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

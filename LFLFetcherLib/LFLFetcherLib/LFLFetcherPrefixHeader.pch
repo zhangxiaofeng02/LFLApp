@@ -13,3 +13,17 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif /* LFLFetcherPrefixHeader_pch */
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+    #import "LFLGlobal.h"
+    #import "LFLURLMaker.h"
+    //AFNetWorking
+    #import "AFNetworking.h"
+    #import "AFURLSessionManager.h"
+    #import "AFHTTPSessionManager.h"
+    #import "AFURLRequestSerialization.h"
+    #import "AFURLResponseSerialization.h"
+#endif
