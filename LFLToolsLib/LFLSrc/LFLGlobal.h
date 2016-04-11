@@ -25,5 +25,8 @@
 #define ScreenScale [UIScreen mainScreen].scale
 
 #define Color(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define WeakSelf   __weak typeof (self) weakSelf = self
+#define StrongSelf __strong typeof (weakSelf) strongSelf = weakSelf
 @interface LFLGlobal : NSObject
 @end
