@@ -62,16 +62,16 @@ withSuccessHandler:(LFLRequestSuccess)success
     if (!url) {
         debugAssert(@"url不正确");
     }
-    
+    WeakSelf;
     LFLURLSesstionTask *task = [manager GET:urlStr parameters:paramer progress:^(NSProgress * _Nonnull downloadProgress) {
         if (progress) {
             progress(downloadProgress.completedUnitCount,downloadProgress.totalUnitCount);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        StrongSelf;
         [[[self class] allTasks] removeObject:task];
-        if (success) {
-            success(responseObject);
-        }
+        [strongSelf doJsonPrasingWithJsonData:responseObject withInterfaceKey:serverInterfaceKey withParamer:paramer completionHandler:success];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[[self class] allTasks] removeObject:task];
         if (failed) {
@@ -92,14 +92,14 @@ withRequestHeader:(NSDictionary *)header
 withProgressHandler:(LFLPostPrgress)progress
 withSuccessHandler:(LFLRequestSuccess)success
 withFailedHandler:(LFLRequestFailed)failed {
-    [self postToUrl:url
-withServerInterfaceKey:kLFLServerInterfaceUnkonw
-        withParamer:paramer
-  withRequestHeader:header
-      isSerialQueue:YES
-withProgressHandler:progress
- withSuccessHandler:success
-  withFailedHandler:failed];
+            [self postToUrl:url
+        withServerInterfaceKey:kLFLServerInterfaceUnkonw
+                withParamer:paramer
+          withRequestHeader:header
+              isSerialQueue:YES
+        withProgressHandler:progress
+         withSuccessHandler:success
+          withFailedHandler:failed];
 }
 
 - (void)postToServerInterfaceKey:(NSString *)serverInterfaceKey
@@ -109,14 +109,14 @@ withProgressHandler:progress
              withProgressHandler:(LFLPostPrgress)progress
               withSuccessHandler:(LFLRequestSuccess)success
                withFailedHandler:(LFLRequestFailed)failed {
-    [self postToUrl:[LFLURLMaker LFLURLwithServerInterfaceKey:serverInterfaceKey]
-withServerInterfaceKey:serverInterfaceKey
-        withParamer:paramer
-  withRequestHeader:header
-      isSerialQueue:YES
-withProgressHandler:progress
- withSuccessHandler:success
-  withFailedHandler:failed];
+                [self postToUrl:[LFLURLMaker LFLURLwithServerInterfaceKey:serverInterfaceKey]
+            withServerInterfaceKey:serverInterfaceKey
+                    withParamer:paramer
+              withRequestHeader:header
+                  isSerialQueue:YES
+            withProgressHandler:progress
+             withSuccessHandler:success
+              withFailedHandler:failed];
 }
 
 - (void)postToUrl:(NSString *)urlStr
@@ -133,15 +133,15 @@ withFailedHandler:(LFLRequestFailed)failed {
     if (!url) {
         debugAssert(@"URL不正确");
     }
+    WeakSelf;
     LFLURLSesstionTask *task = [manager POST:urlStr parameters:paramer progress:^(NSProgress * _Nonnull uploadProgress) {
         if (progress) {
             progress(uploadProgress.completedUnitCount,uploadProgress.totalUnitCount);
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [[[self class] allTasks] removeObject:task];
-        if (success) {
-            success(responseObject);
-        }
+        StrongSelf;
+        [strongSelf doJsonPrasingWithJsonData:responseObject withInterfaceKey:serverInterfaceKye withParamer:paramer completionHandler:success];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[[self class] allTasks] removeObject:task];
         if (failed) {
@@ -151,6 +151,56 @@ withFailedHandler:(LFLRequestFailed)failed {
     if (task) {
         [[[self class] allTasks] addObject:task];
     }
+}
+
+#pragma mark JSON解析
+- (void)doJsonPrasingWithJsonData:(NSData *)data withInterfaceKey:(NSString *)interfaceKey withParamer:(NSDictionary *)paramer completionHandler:(LFLRequestSuccess)success {
+    NSArray *classID = [self praserWithInterfaceKey:interfaceKey];
+    if (classID && classID.count) {
+        for (NSInteger i = 0 ; i<classID.count; i++) {
+            Class praserClass = classID[i];
+            LFLBaseJsonPraser *parser = [LFLBaseJsonPraser createParserWithClass:praserClass initWithData:data];
+            if (i == classID.count -1) {
+                [parser setFinishHandler:^(NSDictionary *result) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (success) {
+                            success(result,nil);
+                        }
+                    });
+                }];
+                [parser setFailedHandler:^(NSDictionary *result) {
+                   dispatch_async(dispatch_get_main_queue(), ^{
+                       if (success) {
+                           NSError *error = [NSError errorWithDomain:@"json praser failed" code:0 userInfo:nil];
+                           success(nil,error);
+                       }
+                   });
+                }];
+            }
+            [[LFLJsonPraserManager shareInstance] addPraserToQueue:parser withGroupID:[self groupID]];
+        }
+    } else {
+        if (success) {
+            NSError *error = [NSError errorWithDomain:@"json praser failed" code:0 userInfo:nil];
+            success(nil,error);
+        }
+    }
+}
+
+- (NSString *)groupID {
+    return [NSString stringWithFormat:@"%p_%@",self,NSStringFromClass([self class])];
+}
+
+#pragma mark JSON解析器
+- (NSArray *)praserWithInterfaceKey:(NSString *)interfaceKey {
+    static NSDictionary *prasers = nil;
+    if (!prasers) {
+        prasers = @{
+                    kLFLServerInterfaceUnkonw:@[[LFLCommonPraser class]],
+                    kLFLServerInterfaceForTest:@[[LFLCommonPraser class]]
+                    };
+    }
+    return prasers[interfaceKey];
 }
 
 #pragma mark 配置AFHTTPSessionManager

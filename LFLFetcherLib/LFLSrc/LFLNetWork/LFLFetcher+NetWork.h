@@ -17,7 +17,7 @@ typedef LFLRequestProgress LFLPostPrgress;
 typedef NSURLSessionTask LFLURLSesstionTask;
 
 //请求成功，失败回调
-typedef void(^LFLRequestSuccess)(NSDictionary *dict);
+typedef void(^LFLRequestSuccess)(NSDictionary *dict,NSError *error);
 typedef void(^LFLRequestFailed)(NSError *error);
 
 @interface LFLFetcher (NetWork)

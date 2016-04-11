@@ -13,8 +13,11 @@
 		E10CADD61CBA1ABE00A089DD /* LFLFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADD51CBA1ABE00A089DD /* LFLFetcher.m */; };
 		E10CADD91CBA1AD100A089DD /* LFLFetcherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADD81CBA1AD100A089DD /* LFLFetcherManager.m */; };
 		E10CADDC1CBA3A9B00A089DD /* LFLFetcher+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */; };
-		E17AF7771CBA48F10077FF38 /* LFLURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */; };
 		E17AF7BA1CBAA0E50077FF38 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */; };
+		E17AF7D91CBB495A0077FF38 /* LFLURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7D81CBB495A0077FF38 /* LFLURLMaker.m */; };
+		E17AF7E81CBB4B830077FF38 /* LFLBaseJsonPraser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7E71CBB4B830077FF38 /* LFLBaseJsonPraser.m */; };
+		E17AF7EB1CBB4B930077FF38 /* LFLJsonPraserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7EA1CBB4B930077FF38 /* LFLJsonPraserManager.m */; };
+		E17AF7EF1CBB6BE70077FF38 /* LFLCommonPraser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7EE1CBB6BE70077FF38 /* LFLCommonPraser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,9 +47,15 @@
 		E10CADD81CBA1AD100A089DD /* LFLFetcherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLFetcherManager.m; sourceTree = "<group>"; };
 		E10CADDA1CBA3A9B00A089DD /* LFLFetcher+NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFLFetcher+NetWork.h"; sourceTree = "<group>"; };
 		E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFLFetcher+NetWork.m"; sourceTree = "<group>"; };
-		E17AF7751CBA48F10077FF38 /* LFLURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLURLMaker.h; sourceTree = "<group>"; };
-		E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLURLMaker.m; sourceTree = "<group>"; };
 		E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		E17AF7D71CBB495A0077FF38 /* LFLURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLURLMaker.h; sourceTree = "<group>"; };
+		E17AF7D81CBB495A0077FF38 /* LFLURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLURLMaker.m; sourceTree = "<group>"; };
+		E17AF7E61CBB4B830077FF38 /* LFLBaseJsonPraser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLBaseJsonPraser.h; sourceTree = "<group>"; };
+		E17AF7E71CBB4B830077FF38 /* LFLBaseJsonPraser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseJsonPraser.m; sourceTree = "<group>"; };
+		E17AF7E91CBB4B930077FF38 /* LFLJsonPraserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLJsonPraserManager.h; sourceTree = "<group>"; };
+		E17AF7EA1CBB4B930077FF38 /* LFLJsonPraserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLJsonPraserManager.m; sourceTree = "<group>"; };
+		E17AF7ED1CBB6BE70077FF38 /* LFLCommonPraser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLCommonPraser.h; sourceTree = "<group>"; };
+		E17AF7EE1CBB6BE70077FF38 /* LFLCommonPraser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLCommonPraser.m; sourceTree = "<group>"; };
 		FFD894DDA2148D51F3DF63BF /* libPods-LFLFetcherLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLFetcherLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				E10CADD31CBA179100A089DD /* LFLNetWork */,
-				E17AF7741CBA48F10077FF38 /* LFLURLFactory */,
 				E10CADD41CBA1ABE00A089DD /* LFLFetcher.h */,
 				E10CADD51CBA1ABE00A089DD /* LFLFetcher.m */,
 				E10CADD71CBA1AD100A089DD /* LFLFetcherManager.h */,
@@ -134,19 +142,42 @@
 		E10CADD31CBA179100A089DD /* LFLNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				E17AF7DA1CBB497A0077FF38 /* LFLJsonPraser */,
+				E17AF7D61CBB495A0077FF38 /* LFLURLFactory */,
 				E10CADDA1CBA3A9B00A089DD /* LFLFetcher+NetWork.h */,
 				E10CADDB1CBA3A9B00A089DD /* LFLFetcher+NetWork.m */,
 			);
 			path = LFLNetWork;
 			sourceTree = "<group>";
 		};
-		E17AF7741CBA48F10077FF38 /* LFLURLFactory */ = {
+		E17AF7D61CBB495A0077FF38 /* LFLURLFactory */ = {
 			isa = PBXGroup;
 			children = (
-				E17AF7751CBA48F10077FF38 /* LFLURLMaker.h */,
-				E17AF7761CBA48F10077FF38 /* LFLURLMaker.m */,
+				E17AF7D71CBB495A0077FF38 /* LFLURLMaker.h */,
+				E17AF7D81CBB495A0077FF38 /* LFLURLMaker.m */,
 			);
 			path = LFLURLFactory;
+			sourceTree = "<group>";
+		};
+		E17AF7DA1CBB497A0077FF38 /* LFLJsonPraser */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7EC1CBB6BD40077FF38 /* LFLCommonPraser */,
+				E17AF7E61CBB4B830077FF38 /* LFLBaseJsonPraser.h */,
+				E17AF7E71CBB4B830077FF38 /* LFLBaseJsonPraser.m */,
+				E17AF7E91CBB4B930077FF38 /* LFLJsonPraserManager.h */,
+				E17AF7EA1CBB4B930077FF38 /* LFLJsonPraserManager.m */,
+			);
+			path = LFLJsonPraser;
+			sourceTree = "<group>";
+		};
+		E17AF7EC1CBB6BD40077FF38 /* LFLCommonPraser */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7ED1CBB6BE70077FF38 /* LFLCommonPraser.h */,
+				E17AF7EE1CBB6BE70077FF38 /* LFLCommonPraser.m */,
+			);
+			path = LFLCommonPraser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17AF7EF1CBB6BE70077FF38 /* LFLCommonPraser.m in Sources */,
 				E10CADD61CBA1ABE00A089DD /* LFLFetcher.m in Sources */,
 				E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */,
 				E10CADD91CBA1AD100A089DD /* LFLFetcherManager.m in Sources */,
-				E17AF7771CBA48F10077FF38 /* LFLURLMaker.m in Sources */,
+				E17AF7EB1CBB4B930077FF38 /* LFLJsonPraserManager.m in Sources */,
+				E17AF7E81CBB4B830077FF38 /* LFLBaseJsonPraser.m in Sources */,
+				E17AF7D91CBB495A0077FF38 /* LFLURLMaker.m in Sources */,
 				E10CADDC1CBA3A9B00A089DD /* LFLFetcher+NetWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

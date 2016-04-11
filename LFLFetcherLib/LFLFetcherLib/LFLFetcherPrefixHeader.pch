@@ -19,11 +19,19 @@
     #import <UIKit/UIKit.h>
 
     #import "LFLGlobal.h"
+
+    //URL工厂
     #import "LFLURLMaker.h"
+
     //AFNetWorking
     #import "AFNetworking.h"
     #import "AFURLSessionManager.h"
     #import "AFHTTPSessionManager.h"
     #import "AFURLRequestSerialization.h"
     #import "AFURLResponseSerialization.h"
+
+    //json解析
+    #import "LFLBaseJsonPraser.h"
+    #import "LFLCommonPraser.h"
+    #import "LFLJsonPraserManager.h"
 #endif
