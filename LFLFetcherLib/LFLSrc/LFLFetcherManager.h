@@ -11,6 +11,8 @@
 
 @interface LFLFetcherManager : NSObject
 
+@property (nonatomic, strong, readonly) NSManagedObjectContext *context;
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *coordinator;
 + (instancetype)shareInstance;
 - (LFLFetcher *)fetcherWithObject:(id)object;
 @end

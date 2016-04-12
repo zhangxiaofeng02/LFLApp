@@ -18,6 +18,8 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 
+    //MagicalRecord
+    #import <MagicalRecord/MagicalRecord.h>
     #import "LFLGlobal.h"
 
     //URL工厂

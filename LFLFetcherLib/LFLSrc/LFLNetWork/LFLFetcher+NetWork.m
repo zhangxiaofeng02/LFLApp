@@ -7,10 +7,17 @@
 //
 
 #import "LFLFetcher+NetWork.h"
+#import "LFLFetcher.h"
 
 static NSInteger kLFLMaxConcurrentOperationCount = 3;
 static NSMutableArray *allTasksArr;
+
 @implementation LFLFetcher (NetWork)
+
+- (NSString *)networkGroupID {
+    NSString *groupid = [NSString stringWithFormat:@"%p_%@",self,NSStringFromClass([self class])];
+    return groupid;
+}
 
 #pragma mark - Get请求
 - (void)getFromUrl:(NSString *)url
@@ -177,7 +184,7 @@ withFailedHandler:(LFLRequestFailed)failed {
                    });
                 }];
             }
-            [[LFLJsonPraserManager shareInstance] addPraserToQueue:parser withGroupID:[self groupID]];
+            [[LFLJsonPraserManager shareInstance] addPraserToQueue:parser withGroupID:[self networkGroupID]];
         }
     } else {
         if (success) {
@@ -185,10 +192,6 @@ withFailedHandler:(LFLRequestFailed)failed {
             success(nil,error);
         }
     }
-}
-
-- (NSString *)groupID {
-    return [NSString stringWithFormat:@"%p_%@",self,NSStringFromClass([self class])];
 }
 
 #pragma mark JSON解析器

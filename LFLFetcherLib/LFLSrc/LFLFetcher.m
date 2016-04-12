@@ -7,10 +7,20 @@
 //
 
 #import "LFLFetcher.h"
+#import "LFLFetcherManager.h"
+#import "LFLFetcher+NetWork.h"
+#import "LFLFetcher+CoreData.h"
+
+@interface LFLFetcher()
+
+@property (nonatomic, strong, readwrite) NSString *networkGroupID;
+@end
 
 @implementation LFLFetcher
 
 - (void)dealloc {
+    [[LFLJsonPraserManager shareInstance] canclePraserInGroup:[self networkGroupID]];
+    //这里少一个取消对应的网络请求方法
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -24,6 +34,6 @@
 }
 
 - (void)didReceiveMemoryWarningNotification:(NSNotification *)notify {
-    
+    [self turnedAllObjectIntoFault];
 }
 @end
