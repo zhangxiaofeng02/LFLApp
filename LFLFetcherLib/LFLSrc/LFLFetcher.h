@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface LFLFetcher : NSObject
+@protocol LFLFetcherDelegate <NSFetchedResultsControllerDelegate>
 
+@end
+
+@interface LFLFetcher : NSObject <NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, weak) id<LFLFetcherDelegate> fetcherDelegate;
 @end

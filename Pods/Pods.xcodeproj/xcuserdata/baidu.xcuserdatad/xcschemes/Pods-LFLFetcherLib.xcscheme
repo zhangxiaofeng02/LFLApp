@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F5E25889B7EA450E729A6822'
+               BlueprintIdentifier = 'AF9F19919EAF104C1CF8F616'
                BlueprintName = 'Pods-LFLFetcherLib'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LFLFetcherLib.a'>
