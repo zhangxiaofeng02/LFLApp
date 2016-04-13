@@ -82,12 +82,13 @@
 /**
  * 返回当前属性的第一条
  **/
-+ (id)largestValueForAttribute:(NSString *)attribute entityClass:(Class)entityClass;
++ (id)largestValueForAttribute:(NSString *)attribute ascending:(BOOL)ascending entityClass:(Class)entityClass;
 
 /**
  * 根据过滤条件获取对应的托管对象模型数组
  **/
 + (NSArray *)fetchObjectsWithPredicate:(NSPredicate *)predicate entityClass:(Class)entityClass;
+
 /**
  * 根据过滤条件，排序，分组，数量获取托管对象模型数组
  **/
