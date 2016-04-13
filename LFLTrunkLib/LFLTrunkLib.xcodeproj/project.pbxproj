@@ -1,1314 +1,618 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00F6D0BCA080FA6597E508E8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-LFLTrunkLib.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0E5ECD7E4180B69DCDB020B3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC311659326FCCC57656C12D</string>
-				<string>FCCC8141ACFC8AE7CDC226F1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>15294E2555B41FD0A3D68D94</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>355564C152C967514B3A9D00</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8A19B2DEE1F32DF67D502AAD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00F6D0BCA080FA6597E508E8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC311659326FCCC57656C12D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-LFLTrunkLib.debug.xcconfig</string>
-			<key>path</key>
-			<string>../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CD71682786BC86358BBBD885</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00F6D0BCA080FA6597E508E8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096CFE1CB6437C00484BDB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>lfl_user_center_go_icon@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096CFF1CB6437C00484BDB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>lfl_user_center_go_icon@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D001CB6437C00484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096CFE1CB6437C00484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D011CB6437C00484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096CFF1CB6437C00484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D061CB64F0D00484BDB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D0B1CB64F4500484BDB</string>
-				<string>E1096D081CB64F4500484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D071CB64F0D00484BDB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D101CB64F4A00484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ui</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D081CB64F4500484BDB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D091CB64F4500484BDB</string>
-				<string>E1096D0A1CB64F4500484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>&#20010;&#20154;&#20013;&#24515;</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D091CB64F4500484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLUserCenterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D0A1CB64F4500484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLUserCenterViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D0B1CB64F4500484BDB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D181CB64F7E00484BDB</string>
-				<string>E1096D191CB64F7E00484BDB</string>
-				<string>E1096D0C1CB64F4500484BDB</string>
-				<string>E1096D0D1CB64F4500484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>&#20027;&#30028;&#38754;</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D0C1CB64F4500484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLMainTabBarController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D0D1CB64F4500484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLMainTabBarController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D0E1CB64F4500484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096D0A1CB64F4500484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D0F1CB64F4500484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096D0D1CB64F4500484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D101CB64F4A00484BDB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D111CB64F4A00484BDB</string>
-				<string>E1096D121CB64F4A00484BDB</string>
-				<string>E1096D131CB64F4A00484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>&#20010;&#20154;&#20013;&#24515;</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D111CB64F4A00484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLUserCenterCustomTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D121CB64F4A00484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLUserCenterCustomTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D131CB64F4A00484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>LFLUserCenterCustomTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D141CB64F4A00484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096D121CB64F4A00484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D181CB64F7E00484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLTestAppController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D191CB64F7E00484BDB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLTestAppController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1096D1A1CB64F7E00484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096D191CB64F7E00484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1096D1B1CB6501B00484BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1096D131CB64F4A00484BDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1332A371CBCD09A00ECA544</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E17AF7971CBA93900077FF38</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1332A381CBCD0B200ECA544</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libAFNetworking.a</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphoneos/libAFNetworking.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1332A391CBCD0B200ECA544</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libMagicalRecord.a</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphoneos/libMagicalRecord.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E17AF7911CBA938B0077FF38</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E17AF7921CBA93900077FF38</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LFLFrameWorks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E17AF7921CBA93900077FF38</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.pb-project</string>
-			<key>name</key>
-			<string>LFLFetcherLib.xcodeproj</string>
-			<key>path</key>
-			<string>../../LFLFetcherLib/LFLFetcherLib.xcodeproj</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E17AF7931CBA93900077FF38</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E17AF7971CBA93900077FF38</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E17AF7961CBA93900077FF38</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E17AF7921CBA93900077FF38</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>E106290E1CB7618300239297</string>
-			<key>remoteInfo</key>
-			<string>LFLFetcherLib</string>
-		</dict>
-		<key>E17AF7971CBA93900077FF38</key>
-		<dict>
-			<key>fileType</key>
-			<string>archive.ar</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>libLFLFetcherLib.a</string>
-			<key>remoteRef</key>
-			<string>E17AF7961CBA93900077FF38</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E17AF79B1CBA94670077FF38</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E17AF7921CBA93900077FF38</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E106290D1CB7618300239297</string>
-			<key>remoteInfo</key>
-			<string>LFLFetcherLib</string>
-		</dict>
-		<key>E17AF79C1CBA94670077FF38</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>LFLFetcherLib</string>
-			<key>targetProxy</key>
-			<string>E17AF79B1CBA94670077FF38</string>
-		</dict>
-		<key>E1CD99ED1CB29B2D00580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1332A381CBCD0B200ECA544</string>
-				<string>E1332A391CBCD0B200ECA544</string>
-				<string>E1CD99F81CB29B2D00580FDC</string>
-				<string>E1CD9A141CB29E6800580FDC</string>
-				<string>E1CD9A131CB29E6800580FDC</string>
-				<string>E1CD9A2A1CB2A7A500580FDC</string>
-				<string>E1CD99F71CB29B2D00580FDC</string>
-				<string>E17AF7911CBA938B0077FF38</string>
-				<string>0E5ECD7E4180B69DCDB020B3</string>
-				<string>CD71682786BC86358BBBD885</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD99EE1CB29B2D00580FDC</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>&#24352;&#21880;&#23792;</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E1CD99F51CB29B2D00580FDC</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>E1CD9A281CB2A7A500580FDC</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E1CD99F11CB29B2D00580FDC</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E1CD99ED1CB29B2D00580FDC</string>
-			<key>productRefGroup</key>
-			<string>E1CD99F71CB29B2D00580FDC</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array>
-				<dict>
-					<key>ProductGroup</key>
-					<string>E17AF7931CBA93900077FF38</string>
-					<key>ProjectRef</key>
-					<string>E17AF7921CBA93900077FF38</string>
-				</dict>
-			</array>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E1CD99F51CB29B2D00580FDC</string>
-				<string>E1CD9A281CB2A7A500580FDC</string>
-			</array>
-		</dict>
-		<key>E1CD99F11CB29B2D00580FDC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E1CD99FD1CB29B2D00580FDC</string>
-				<string>E1CD99FE1CB29B2D00580FDC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E1CD99F21CB29B2D00580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E1096D0E1CB64F4500484BDB</string>
-				<string>E1096D1A1CB64F7E00484BDB</string>
-				<string>E1CD99FC1CB29B2D00580FDC</string>
-				<string>E1096D141CB64F4A00484BDB</string>
-				<string>E1CD9A3B1CB2B4EA00580FDC</string>
-				<string>E1096D0F1CB64F4500484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD99F31CB29B2D00580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E1332A371CBCD09A00ECA544</string>
-				<string>8A19B2DEE1F32DF67D502AAD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD99F41CB29B2D00580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>E1CD99FA1CB29B2D00580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD99F51CB29B2D00580FDC</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E1CD99FF1CB29B2D00580FDC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>15294E2555B41FD0A3D68D94</string>
-				<string>E1CD99F21CB29B2D00580FDC</string>
-				<string>E1CD99F31CB29B2D00580FDC</string>
-				<string>E1CD99F41CB29B2D00580FDC</string>
-				<string>355564C152C967514B3A9D00</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E17AF79C1CBA94670077FF38</string>
-				<string>E1CD9A301CB2A80200580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>LFLTrunkLib</string>
-			<key>productName</key>
-			<string>LFLTrunkLib</string>
-			<key>productReference</key>
-			<string>E1CD99F61CB29B2D00580FDC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E1CD99F61CB29B2D00580FDC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libLFLTrunkLib.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E1CD99F71CB29B2D00580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1CD99F61CB29B2D00580FDC</string>
-				<string>E1CD9A291CB2A7A500580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD99F81CB29B2D00580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1CD99F91CB29B2D00580FDC</string>
-				<string>E1CD99FB1CB29B2D00580FDC</string>
-				<string>E1CD9A3C1CB2B50500580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LFLTrunkLib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD99F91CB29B2D00580FDC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLTrunkLib.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD99FA1CB29B2D00580FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1CD99F91CB29B2D00580FDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1CD99FB1CB29B2D00580FDC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLTrunkLib.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD99FC1CB29B2D00580FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1CD99FB1CB29B2D00580FDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1CD99FD1CB29B2D00580FDC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E1CD99FE1CB29B2D00580FDC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E1CD99FF1CB29B2D00580FDC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E1CD9A001CB29B2D00580FDC</string>
-				<string>E1CD9A011CB29B2D00580FDC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E1CD9A001CB29B2D00580FDC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>BC311659326FCCC57656C12D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>LFLTrunkLib/LFLTrunkLibPrefixHeader.pch</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>./../LFLFetcherLib/**</string>
-					<string>./../LFLToolsLib/**</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-ObjC</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>USER_HEADER_SEARCH_PATHS</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E1CD9A011CB29B2D00580FDC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FCCC8141ACFC8AE7CDC226F1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>LFLTrunkLib/LFLTrunkLibPrefixHeader.pch</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>./../LFLFetcherLib/**</string>
-					<string>./../LFLToolsLib/**</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-ObjC</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>USER_HEADER_SEARCH_PATHS</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E1CD9A131CB29E6800580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096D061CB64F0D00484BDB</string>
-				<string>E1096D071CB64F0D00484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LFLSrc</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A141CB29E6800580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1CD9A391CB2B4EA00580FDC</string>
-				<string>E1CD9A3A1CB2B4EA00580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LFLTrunkCommon</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A251CB2A7A500580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD9A261CB2A7A500580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD9A271CB2A7A500580FDC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E1096D001CB6437C00484BDB</string>
-				<string>E1096D1B1CB6501B00484BDB</string>
-				<string>E1CD9A901CB51FD100580FDC</string>
-				<string>E1CD9A911CB51FD100580FDC</string>
-				<string>E1096D011CB6437C00484BDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1CD9A281CB2A7A500580FDC</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E1CD9A2E1CB2A7A500580FDC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E1CD9A251CB2A7A500580FDC</string>
-				<string>E1CD9A261CB2A7A500580FDC</string>
-				<string>E1CD9A271CB2A7A500580FDC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>LFLTrunkBundle</string>
-			<key>productName</key>
-			<string>LFLTrunkBundle</string>
-			<key>productReference</key>
-			<string>E1CD9A291CB2A7A500580FDC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>E1CD9A291CB2A7A500580FDC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>LFLTrunkBundle.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E1CD9A2A1CB2A7A500580FDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1096CFE1CB6437C00484BDB</string>
-				<string>E1096CFF1CB6437C00484BDB</string>
-				<string>E1CD9A8E1CB51FD100580FDC</string>
-				<string>E1CD9A8F1CB51FD100580FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>LFLTrunkBundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A2C1CB2A7A500580FDC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>NO</string>
-				<key>INFOPLIST_FILE</key>
-				<string></string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.zxf.leaf.LFLTrunkBundle</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E1CD9A2D1CB2A7A500580FDC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>NO</string>
-				<key>INFOPLIST_FILE</key>
-				<string></string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.11</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.zxf.leaf.LFLTrunkBundle</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E1CD9A2E1CB2A7A500580FDC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E1CD9A2C1CB2A7A500580FDC</string>
-				<string>E1CD9A2D1CB2A7A500580FDC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E1CD9A2F1CB2A80200580FDC</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E1CD99EE1CB29B2D00580FDC</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E1CD9A281CB2A7A500580FDC</string>
-			<key>remoteInfo</key>
-			<string>LFLTrunkBundle</string>
-		</dict>
-		<key>E1CD9A301CB2A80200580FDC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E1CD9A281CB2A7A500580FDC</string>
-			<key>targetProxy</key>
-			<string>E1CD9A2F1CB2A80200580FDC</string>
-		</dict>
-		<key>E1CD9A391CB2B4EA00580FDC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLTrunkBundle.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A3A1CB2B4EA00580FDC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LFLTrunkBundle.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A3B1CB2B4EA00580FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1CD9A3A1CB2B4EA00580FDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1CD9A3C1CB2B50500580FDC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LFLTrunkLibPrefixHeader.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A8E1CB51FD100580FDC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>test@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A8F1CB51FD100580FDC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>test@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1CD9A901CB51FD100580FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1CD9A8E1CB51FD100580FDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1CD9A911CB51FD100580FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1CD9A8F1CB51FD100580FDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCCC8141ACFC8AE7CDC226F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-LFLTrunkLib.release.xcconfig</string>
-			<key>path</key>
-			<string>../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E1CD99EE1CB29B2D00580FDC</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A19B2DEE1F32DF67D502AAD /* libPods-LFLTrunkLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */; };
+		E1096D001CB6437C00484BDB /* lfl_user_center_go_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1096CFE1CB6437C00484BDB /* lfl_user_center_go_icon@2x.png */; };
+		E1096D011CB6437C00484BDB /* lfl_user_center_go_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */; };
+		E1096D0E1CB64F4500484BDB /* LFLUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D0A1CB64F4500484BDB /* LFLUserCenterViewController.m */; };
+		E1096D0F1CB64F4500484BDB /* LFLMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D0D1CB64F4500484BDB /* LFLMainTabBarController.m */; };
+		E1096D141CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D121CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m */; };
+		E1096D1A1CB64F7E00484BDB /* LFLTestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D191CB64F7E00484BDB /* LFLTestAppController.m */; };
+		E1096D1B1CB6501B00484BDB /* LFLUserCenterCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1096D131CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.xib */; };
+		E1332A371CBCD09A00ECA544 /* libLFLFetcherLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E17AF7971CBA93900077FF38 /* libLFLFetcherLib.a */; };
+		E1CD99FA1CB29B2D00580FDC /* LFLTrunkLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */; };
+		E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */; };
+		E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */; };
+		E1CD9A901CB51FD100580FDC /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD9A8E1CB51FD100580FDC /* test@2x.png */; };
+		E1CD9A911CB51FD100580FDC /* test@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD9A8F1CB51FD100580FDC /* test@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E17AF7961CBA93900077FF38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E106290E1CB7618300239297;
+			remoteInfo = LFLFetcherLib;
+		};
+		E17AF79B1CBA94670077FF38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E106290D1CB7618300239297;
+			remoteInfo = LFLFetcherLib;
+		};
+		E1CD9A2F1CB2A80200580FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CD99EE1CB29B2D00580FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1CD9A281CB2A7A500580FDC;
+			remoteInfo = LFLTrunkBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1CD99F41CB29B2D00580FDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E1CD99FA1CB29B2D00580FDC /* LFLTrunkLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLTrunkLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC311659326FCCC57656C12D /* Pods-LFLTrunkLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLTrunkLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib.debug.xcconfig"; sourceTree = "<group>"; };
+		E1096CFE1CB6437C00484BDB /* lfl_user_center_go_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lfl_user_center_go_icon@2x.png"; sourceTree = "<group>"; };
+		E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lfl_user_center_go_icon@3x.png"; sourceTree = "<group>"; };
+		E1096D091CB64F4500484BDB /* LFLUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserCenterViewController.h; sourceTree = "<group>"; };
+		E1096D0A1CB64F4500484BDB /* LFLUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLUserCenterViewController.m; sourceTree = "<group>"; };
+		E1096D0C1CB64F4500484BDB /* LFLMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLMainTabBarController.h; sourceTree = "<group>"; };
+		E1096D0D1CB64F4500484BDB /* LFLMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLMainTabBarController.m; sourceTree = "<group>"; };
+		E1096D111CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserCenterCustomTableViewCell.h; sourceTree = "<group>"; };
+		E1096D121CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLUserCenterCustomTableViewCell.m; sourceTree = "<group>"; };
+		E1096D131CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFLUserCenterCustomTableViewCell.xib; sourceTree = "<group>"; };
+		E1096D181CB64F7E00484BDB /* LFLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTestAppController.h; sourceTree = "<group>"; };
+		E1096D191CB64F7E00484BDB /* LFLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTestAppController.m; sourceTree = "<group>"; };
+		E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LFLFetcherLib.xcodeproj; path = ../../LFLFetcherLib/LFLFetcherLib.xcodeproj; sourceTree = "<group>"; };
+		E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLTrunkLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLTrunkLib.h; sourceTree = "<group>"; };
+		E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLTrunkLib.m; sourceTree = "<group>"; };
+		E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFLTrunkBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CD9A391CB2B4EA00580FDC /* LFLTrunkBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTrunkBundle.h; sourceTree = "<group>"; };
+		E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTrunkBundle.m; sourceTree = "<group>"; };
+		E1CD9A3C1CB2B50500580FDC /* LFLTrunkLibPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTrunkLibPrefixHeader.pch; sourceTree = "<group>"; };
+		E1CD9A8E1CB51FD100580FDC /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		E1CD9A8F1CB51FD100580FDC /* test@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@3x.png"; sourceTree = "<group>"; };
+		FCCC8141ACFC8AE7CDC226F1 /* Pods-LFLTrunkLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLTrunkLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1CD99F31CB29B2D00580FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1332A371CBCD09A00ECA544 /* libLFLFetcherLib.a in Frameworks */,
+				8A19B2DEE1F32DF67D502AAD /* libPods-LFLTrunkLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CD9A261CB2A7A500580FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E5ECD7E4180B69DCDB020B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC311659326FCCC57656C12D /* Pods-LFLTrunkLib.debug.xcconfig */,
+				FCCC8141ACFC8AE7CDC226F1 /* Pods-LFLTrunkLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD71682786BC86358BBBD885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1096D061CB64F0D00484BDB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D0B1CB64F4500484BDB /* 主界面 */,
+				E1096D081CB64F4500484BDB /* 个人中心 */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E1096D071CB64F0D00484BDB /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D101CB64F4A00484BDB /* 个人中心 */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		E1096D081CB64F4500484BDB /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D091CB64F4500484BDB /* LFLUserCenterViewController.h */,
+				E1096D0A1CB64F4500484BDB /* LFLUserCenterViewController.m */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		E1096D0B1CB64F4500484BDB /* 主界面 */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D181CB64F7E00484BDB /* LFLTestAppController.h */,
+				E1096D191CB64F7E00484BDB /* LFLTestAppController.m */,
+				E1096D0C1CB64F4500484BDB /* LFLMainTabBarController.h */,
+				E1096D0D1CB64F4500484BDB /* LFLMainTabBarController.m */,
+			);
+			path = "主界面";
+			sourceTree = "<group>";
+		};
+		E1096D101CB64F4A00484BDB /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D111CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.h */,
+				E1096D121CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m */,
+				E1096D131CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.xib */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		E17AF7911CBA938B0077FF38 /* LFLFrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */,
+			);
+			path = LFLFrameWorks;
+			sourceTree = "<group>";
+		};
+		E17AF7931CBA93900077FF38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E17AF7971CBA93900077FF38 /* libLFLFetcherLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1CD99ED1CB29B2D00580FDC = {
+			isa = PBXGroup;
+			children = (
+				E1CD99F81CB29B2D00580FDC /* LFLTrunkLib */,
+				E1CD9A141CB29E6800580FDC /* LFLTrunkCommon */,
+				E1CD9A131CB29E6800580FDC /* LFLSrc */,
+				E1CD9A2A1CB2A7A500580FDC /* LFLTrunkBundle */,
+				E1CD99F71CB29B2D00580FDC /* Products */,
+				E17AF7911CBA938B0077FF38 /* LFLFrameWorks */,
+				0E5ECD7E4180B69DCDB020B3 /* Pods */,
+				CD71682786BC86358BBBD885 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1CD99F71CB29B2D00580FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */,
+				E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1CD99F81CB29B2D00580FDC /* LFLTrunkLib */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */,
+				E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */,
+				E1CD9A3C1CB2B50500580FDC /* LFLTrunkLibPrefixHeader.pch */,
+			);
+			path = LFLTrunkLib;
+			sourceTree = "<group>";
+		};
+		E1CD9A131CB29E6800580FDC /* LFLSrc */ = {
+			isa = PBXGroup;
+			children = (
+				E1096D061CB64F0D00484BDB /* controller */,
+				E1096D071CB64F0D00484BDB /* ui */,
+			);
+			path = LFLSrc;
+			sourceTree = "<group>";
+		};
+		E1CD9A141CB29E6800580FDC /* LFLTrunkCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD9A391CB2B4EA00580FDC /* LFLTrunkBundle.h */,
+				E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */,
+			);
+			path = LFLTrunkCommon;
+			sourceTree = "<group>";
+		};
+		E1CD9A2A1CB2A7A500580FDC /* LFLTrunkBundle */ = {
+			isa = PBXGroup;
+			children = (
+				E1096CFE1CB6437C00484BDB /* lfl_user_center_go_icon@2x.png */,
+				E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */,
+				E1CD9A8E1CB51FD100580FDC /* test@2x.png */,
+				E1CD9A8F1CB51FD100580FDC /* test@3x.png */,
+			);
+			path = LFLTrunkBundle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1CD99F51CB29B2D00580FDC /* LFLTrunkLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CD99FF1CB29B2D00580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkLib" */;
+			buildPhases = (
+				15294E2555B41FD0A3D68D94 /* Check Pods Manifest.lock */,
+				E1CD99F21CB29B2D00580FDC /* Sources */,
+				E1CD99F31CB29B2D00580FDC /* Frameworks */,
+				E1CD99F41CB29B2D00580FDC /* CopyFiles */,
+				355564C152C967514B3A9D00 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17AF79C1CBA94670077FF38 /* PBXTargetDependency */,
+				E1CD9A301CB2A80200580FDC /* PBXTargetDependency */,
+			);
+			name = LFLTrunkLib;
+			productName = LFLTrunkLib;
+			productReference = E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CD9A2E1CB2A7A500580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkBundle" */;
+			buildPhases = (
+				E1CD9A251CB2A7A500580FDC /* Sources */,
+				E1CD9A261CB2A7A500580FDC /* Frameworks */,
+				E1CD9A271CB2A7A500580FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFLTrunkBundle;
+			productName = LFLTrunkBundle;
+			productReference = E1CD9A291CB2A7A500580FDC /* LFLTrunkBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1CD99EE1CB29B2D00580FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张啸峰";
+				TargetAttributes = {
+					E1CD99F51CB29B2D00580FDC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E1CD9A281CB2A7A500580FDC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E1CD99F11CB29B2D00580FDC /* Build configuration list for PBXProject "LFLTrunkLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1CD99ED1CB29B2D00580FDC;
+			productRefGroup = E1CD99F71CB29B2D00580FDC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E17AF7931CBA93900077FF38 /* Products */;
+					ProjectRef = E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E1CD99F51CB29B2D00580FDC /* LFLTrunkLib */,
+				E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E17AF7971CBA93900077FF38 /* libLFLFetcherLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLFLFetcherLib.a;
+			remoteRef = E17AF7961CBA93900077FF38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1CD9A271CB2A7A500580FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1096D001CB6437C00484BDB /* lfl_user_center_go_icon@2x.png in Resources */,
+				E1096D1B1CB6501B00484BDB /* LFLUserCenterCustomTableViewCell.xib in Resources */,
+				E1CD9A901CB51FD100580FDC /* test@2x.png in Resources */,
+				E1CD9A911CB51FD100580FDC /* test@3x.png in Resources */,
+				E1096D011CB6437C00484BDB /* lfl_user_center_go_icon@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15294E2555B41FD0A3D68D94 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		355564C152C967514B3A9D00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1CD99F21CB29B2D00580FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1096D0E1CB64F4500484BDB /* LFLUserCenterViewController.m in Sources */,
+				E1096D1A1CB64F7E00484BDB /* LFLTestAppController.m in Sources */,
+				E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */,
+				E1096D141CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m in Sources */,
+				E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */,
+				E1096D0F1CB64F4500484BDB /* LFLMainTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CD9A251CB2A7A500580FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E17AF79C1CBA94670077FF38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LFLFetcherLib;
+			targetProxy = E17AF79B1CBA94670077FF38 /* PBXContainerItemProxy */;
+		};
+		E1CD9A301CB2A80200580FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1CD9A281CB2A7A500580FDC /* LFLTrunkBundle */;
+			targetProxy = E1CD9A2F1CB2A80200580FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E1CD99FD1CB29B2D00580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1CD99FE1CB29B2D00580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1CD9A001CB29B2D00580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC311659326FCCC57656C12D /* Pods-LFLTrunkLib.debug.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLTrunkLib/LFLTrunkLibPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"./../LFLFetcherLib/**",
+					"./../LFLToolsLib/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		E1CD9A011CB29B2D00580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCC8141ACFC8AE7CDC226F1 /* Pods-LFLTrunkLib.release.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LFLTrunkLib/LFLTrunkLibPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"./../LFLFetcherLib/**",
+					"./../LFLToolsLib/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		E1CD9A2C1CB2A7A500580FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLTrunkBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E1CD9A2D1CB2A7A500580FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLTrunkBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1CD99F11CB29B2D00580FDC /* Build configuration list for PBXProject "LFLTrunkLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD99FD1CB29B2D00580FDC /* Debug */,
+				E1CD99FE1CB29B2D00580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1CD99FF1CB29B2D00580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD9A001CB29B2D00580FDC /* Debug */,
+				E1CD9A011CB29B2D00580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1CD9A2E1CB2A7A500580FDC /* Build configuration list for PBXNativeTarget "LFLTrunkBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CD9A2C1CB2A7A500580FDC /* Debug */,
+				E1CD9A2D1CB2A7A500580FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1CD99EE1CB29B2D00580FDC /* Project object */;
+}

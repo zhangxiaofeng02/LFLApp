@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-LFLToolsLib.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LFLTrunkLib.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>02CE050F93B1E26890689665B4CB8217</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>486BE89906AFD4F2E15DFA9634A6380A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF7498DD9FC85DCB5E0D60AC8480F10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5952AB88812151E7C0081C1A88306A0</key>
+		<key>F280AB86A0FE0286C3767AA82E91C041</key>
 		<dict>
 			<key>primary</key>
 			<true/>
