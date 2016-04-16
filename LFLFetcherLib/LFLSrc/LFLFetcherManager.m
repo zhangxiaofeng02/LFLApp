@@ -54,7 +54,7 @@ static NSString *kTrunkBundleName = @"LFLTrunkBundle";
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:bundleName withExtension:@"bundle"]];
     
     //托管对象模型
-    NSManagedObjectModel *mode = [NSManagedObjectModel MR_newModelNamed:@"Model" inBundle:bundle];
+    NSManagedObjectModel *mode = [NSManagedObjectModel MR_newModelNamed:@"Model.momd" inBundle:bundle];
     [NSManagedObjectModel MR_setDefaultManagedObjectModel:mode];
     
     NSString *storeFileName = [NSString stringWithFormat:@"%@.sqlite",bundleName];
@@ -99,9 +99,7 @@ static NSString *kTrunkBundleName = @"LFLTrunkBundle";
 }
 
 - (void)didEnterBackground {
-    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext * _Nonnull localContext) {
-        
-    }];
+    [[[[self class] shareInstance] context] MR_saveToPersistentStoreAndWait];
 }
 
 - (void)didBecomeActiveNotification {
