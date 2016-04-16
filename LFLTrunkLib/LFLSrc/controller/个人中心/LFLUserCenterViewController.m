@@ -8,6 +8,9 @@
 
 #import "LFLUserCenterViewController.h"
 #import "LFLUserCenterCustomTableViewCell.h"
+#import "LFLFetcher+CoreData.h"
+#import "LFLUserInfo.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface LFLUserCenterViewController()
 
@@ -103,6 +106,32 @@
         } withFailedHandler:^(NSError *error) {
                 LFLLog(@"1");
         }];
+    } else if ([indexPath section] == 2) {
+        [self fetchUserInfoFromCoreData];
     }
+}
+
+- (void)fetchUserInfoFromCoreData {
+    id newObject = nil;
+    Class entityClass = [self provideClass];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"user_name = 'zxf'"]];
+    newObject = [entityClass MR_findFirstWithPredicate:predicate inContext:[[LFLFetcherManager shareInstance] context]];
+    if (!newObject) {
+        newObject = [entityClass MR_createEntityInContext:[[LFLFetcherManager shareInstance] context]];
+        [newObject setValue:@"zxf" forKey:@"user_name"];
+        [newObject setValue:@(1) forKey:@"sex"];
+        [newObject setValue:@(23) forKey:@"age"];
+        if ([[[LFLFetcherManager shareInstance] context] hasChanges]) {
+            [[[LFLFetcherManager shareInstance] context] MR_saveToPersistentStoreAndWait];
+        }
+    } else {
+        LFLUserInfo *userInfo = [LFLFetcher firstObjectWithPredicate:predicate sortedBy:nil entityClass:[LFLUserInfo class]];
+        userInfo.age = @(25);
+        [LFLFetcher updateObjectPropertyWith:userInfo];
+    }
+}
+
+- (Class)provideClass {
+    return NSClassFromString(@"LFLUserInfo");
 }
 @end

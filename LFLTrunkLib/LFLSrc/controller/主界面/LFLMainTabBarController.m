@@ -9,9 +9,12 @@
 #import "LFLMainTabBarController.h"
 #import "LFLTestAppController.h"
 #import "LFLUserCenterViewController.h"
+#import "LFLFetcher.h"
+#import "LFLFetcherManager.h"
 
 @interface LFLMainTabBarController ()
 
+@property (nonatomic, strong) LFLFetcher *fetcher;
 @end
 
 @implementation LFLMainTabBarController
@@ -19,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initChildControllers];
+    [[LFLFetcherManager shareInstance] initCoreData];
+    self.fetcher = [[LFLFetcherManager shareInstance] fetcherWithObject:self];
 }
 
 - (void)didReceiveMemoryWarning {

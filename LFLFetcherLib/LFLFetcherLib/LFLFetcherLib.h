@@ -10,7 +10,16 @@
 
 #import "LFLFetcher.h"
 #import "LFLFetcherManager.h"
+//网络
 #import "LFLFetcher+NetWork.h"
+#import "LFLURLMaker.h"
+#import "LFLCommonPraser.h"
+#import "LFLJsonPraserManager.h"
+//数据库
+#import "LFLFetcher+CoreData.h"
+#import "NSManagedObject+LFLExtend.h"
+//NSManagerObject
+#import "LFLUserInfo.h"
 
 @interface LFLFetcherLib : NSObject
 

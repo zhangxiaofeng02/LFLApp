@@ -16,6 +16,7 @@
 		E1096D1A1CB64F7E00484BDB /* LFLTestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D191CB64F7E00484BDB /* LFLTestAppController.m */; };
 		E1096D1B1CB6501B00484BDB /* LFLUserCenterCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1096D131CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.xib */; };
 		E1332A371CBCD09A00ECA544 /* libLFLFetcherLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E17AF7971CBA93900077FF38 /* libLFLFetcherLib.a */; };
+		E13EF2E01CC21BFD00D9C7D5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E13EF2DE1CC21BFD00D9C7D5 /* Model.xcdatamodeld */; };
 		E1CD99FA1CB29B2D00580FDC /* LFLTrunkLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */; };
 		E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99FB1CB29B2D00580FDC /* LFLTrunkLib.m */; };
 		E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD9A3A1CB2B4EA00580FDC /* LFLTrunkBundle.m */; };
@@ -74,6 +75,7 @@
 		E1096D131CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFLUserCenterCustomTableViewCell.xib; sourceTree = "<group>"; };
 		E1096D181CB64F7E00484BDB /* LFLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLTestAppController.h; sourceTree = "<group>"; };
 		E1096D191CB64F7E00484BDB /* LFLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLTestAppController.m; sourceTree = "<group>"; };
+		E13EF2DF1CC21BFD00D9C7D5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E17AF7921CBA93900077FF38 /* LFLFetcherLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LFLFetcherLib.xcodeproj; path = ../../LFLFetcherLib/LFLFetcherLib.xcodeproj; sourceTree = "<group>"; };
 		E1CD99F61CB29B2D00580FDC /* libLFLTrunkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLTrunkLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CD99F91CB29B2D00580FDC /* LFLTrunkLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLTrunkLib.h; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */,
 				E1CD9A8E1CB51FD100580FDC /* test@2x.png */,
 				E1CD9A8F1CB51FD100580FDC /* test@3x.png */,
+				E13EF2DE1CC21BFD00D9C7D5 /* Model.xcdatamodeld */,
 			);
 			path = LFLTrunkBundle;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13EF2E01CC21BFD00D9C7D5 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +617,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E13EF2DE1CC21BFD00D9C7D5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E13EF2DF1CC21BFD00D9C7D5 /* Model.xcdatamodel */,
+			);
+			currentVersion = E13EF2DF1CC21BFD00D9C7D5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E1CD99EE1CB29B2D00580FDC /* Project object */;
 }

@@ -17,6 +17,7 @@
 		E1332A3E1CBCD0E900ECA544 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1332A3C1CBCD0E900ECA544 /* libAFNetworking.a */; };
 		E1332A3F1CBCD0E900ECA544 /* libMagicalRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1332A3D1CBCD0E900ECA544 /* libMagicalRecord.a */; };
 		E1332A471CBCF59D00ECA544 /* NSManagedObject+LFLExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E1332A461CBCF59D00ECA544 /* NSManagedObject+LFLExtend.m */; };
+		E13EF2EF1CC21FD600D9C7D5 /* LFLUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E13EF2EE1CC21FD600D9C7D5 /* LFLUserInfo.m */; };
 		E17AF7D91CBB495A0077FF38 /* LFLURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7D81CBB495A0077FF38 /* LFLURLMaker.m */; };
 		E17AF7E81CBB4B830077FF38 /* LFLBaseJsonPraser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7E71CBB4B830077FF38 /* LFLBaseJsonPraser.m */; };
 		E17AF7EB1CBB4B930077FF38 /* LFLJsonPraserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AF7EA1CBB4B930077FF38 /* LFLJsonPraserManager.m */; };
@@ -57,6 +58,8 @@
 		E1332A3D1CBCD0E900ECA544 /* libMagicalRecord.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMagicalRecord.a; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphoneos/libMagicalRecord.a"; sourceTree = "<group>"; };
 		E1332A451CBCF59D00ECA544 /* NSManagedObject+LFLExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+LFLExtend.h"; sourceTree = "<group>"; };
 		E1332A461CBCF59D00ECA544 /* NSManagedObject+LFLExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+LFLExtend.m"; sourceTree = "<group>"; };
+		E13EF2ED1CC21FD600D9C7D5 /* LFLUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserInfo.h; sourceTree = "<group>"; };
+		E13EF2EE1CC21FD600D9C7D5 /* LFLUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLUserInfo.m; sourceTree = "<group>"; };
 		E17AF7B91CBAA0E50077FF38 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
 		E17AF7D71CBB495A0077FF38 /* LFLURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLURLMaker.h; sourceTree = "<group>"; };
 		E17AF7D81CBB495A0077FF38 /* LFLURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLURLMaker.m; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 		E1332A2E1CBCC6EE00ECA544 /* LFLCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E13EF2EC1CC21FA800D9C7D5 /* NSManagedObject */,
 				E1332A441CBCF58800ECA544 /* NSManagedObject+Category */,
 				E1332A2F1CBCC76B00ECA544 /* LFLFetcher+CoreData.h */,
 				E1332A301CBCC76B00ECA544 /* LFLFetcher+CoreData.m */,
@@ -182,6 +186,15 @@
 				E1332A461CBCF59D00ECA544 /* NSManagedObject+LFLExtend.m */,
 			);
 			path = "NSManagedObject+Category";
+			sourceTree = "<group>";
+		};
+		E13EF2EC1CC21FA800D9C7D5 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				E13EF2ED1CC21FD600D9C7D5 /* LFLUserInfo.h */,
+				E13EF2EE1CC21FD600D9C7D5 /* LFLUserInfo.m */,
+			);
+			path = NSManagedObject;
 			sourceTree = "<group>";
 		};
 		E17AF7D61CBB495A0077FF38 /* LFLURLFactory */ = {
@@ -306,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17AF7EF1CBB6BE70077FF38 /* LFLCommonPraser.m in Sources */,
+				E13EF2EF1CC21FD600D9C7D5 /* LFLUserInfo.m in Sources */,
 				E10CADD61CBA1ABE00A089DD /* LFLFetcher.m in Sources */,
 				E1332A471CBCF59D00ECA544 /* NSManagedObject+LFLExtend.m in Sources */,
 				E10629141CB7618300239297 /* LFLFetcherLib.m in Sources */,
