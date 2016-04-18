@@ -13,5 +13,8 @@ extern NSString *const kLFLServerInterfaceForTest;
 
 @interface LFLURLMaker : NSObject
 
+/**
+ * 工厂方法，根据定义的key生成对应的url
+ */
 + (NSString *)LFLURLwithServerInterfaceKey:(NSString *)key;
 @end
