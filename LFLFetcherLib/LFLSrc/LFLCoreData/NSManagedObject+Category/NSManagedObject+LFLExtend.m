@@ -42,9 +42,10 @@
     return [self MR_executeFetchRequest:request inContext:context];
 }
 
-+ (NSMutableArray *)copyPropertysName {
++ (NSMutableArray *)copyPropertysName:(NSManagedObject *)object {
     NSMutableArray *allPropertys = [NSMutableArray new];
-    Class class = [self class];
+    NSString *moName = [object.entity name];
+    Class class = NSClassFromString(moName);
     while (![NSStringFromClass(class) isEqualToString:@"NSManagedObject"]) {
         unsigned int propertyCount = 0;
         objc_property_t *properties = class_copyPropertyList(class, &propertyCount);
@@ -62,7 +63,7 @@
 
 - (BOOL)copyPropertysTo:(NSManagedObject *)toObject {
     BOOL hasChange = NO;
-    NSArray *propertys = [[[self class] copyPropertysName] copy];
+    NSArray *propertys = [[self class] copyPropertysName:toObject];
     for (NSString *key in propertys) {
         if (!key) {
             continue;
