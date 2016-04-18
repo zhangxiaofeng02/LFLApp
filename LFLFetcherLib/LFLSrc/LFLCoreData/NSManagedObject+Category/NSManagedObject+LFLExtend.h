@@ -33,7 +33,7 @@
 /**
  * 获取一个托管对象模型的全部属性
  **/
-+ (NSMutableArray *)copyPropertysName;
++ (NSMutableArray *)copyPropertysName:(NSManagedObject *)object;
 
 /**
  * 托管对象模型属性迁移

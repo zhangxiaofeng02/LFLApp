@@ -15,9 +15,23 @@ typedef void(^LFLJsonPraserFailedHandler)(NSDictionary *result);
     id _jsonObj;
 }
 
+/**
+ * 根据praser类型生成对应的json解析器队列，传入的是NSData
+ **/
 + (LFLBaseJsonPraser *)createParserWithClass:(Class)parserClass initWithData:(NSData *)data;
+
+/**
+ * 根据praser类型生成对应的json解析器队列，传入的是Json
+ **/
 + (LFLBaseJsonPraser *)createParserWithClass:(Class)parserClass initWithJson:(NSDictionary *)json;
 
+/**
+ * 解析完成回调
+ **/
 @property (nonatomic, copy) LFLJsonPraserFinishHandler finishHandler;
+
+/**
+ * 解析失败回调
+ **/
 @property (nonatomic, copy) LFLJsonPraserFailedHandler failedHandler;
 @end
