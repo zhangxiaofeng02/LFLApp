@@ -108,6 +108,10 @@
         }];
     } else if ([indexPath section] == 2) {
         [self fetchUserInfoFromCoreData];
+    } else if ([indexPath section] == 1) {
+        if ([indexPath row] == 0) {
+            
+        }
     }
 }
 
@@ -126,7 +130,7 @@
         }
     } else {
         LFLUserInfo *userInfo = [LFLFetcher firstObjectWithPredicate:predicate sortedBy:nil entityClass:[LFLUserInfo class]];
-        userInfo.age = @(25);
+        userInfo.age = @(26);
         [LFLFetcher updateObjectPropertyWith:userInfo];
     }
 }

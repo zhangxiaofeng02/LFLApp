@@ -210,7 +210,6 @@ static const void *fetcherDictionaryKey = &fetcherDictionaryKey;
     NSPersistentStoreCoordinator *coordinator = [manager coordinator];
     NSManagedObjectContext *privateContext = [NSManagedObjectContext MR_contextWithStoreCoordinator:coordinator];
     __weak NSManagedObjectContext *mainContext = [manager context];
-    
     [mainContext performBlockAndWait:^{
         [mainContext MR_observeContextOnMainThread:privateContext];
     }];
