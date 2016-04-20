@@ -21,6 +21,7 @@ end
 
 target:LFLToolsLib do
 platform:ios , '7.0'
+pod 'ReactiveCocoa', '~> 2.5'
 pod 'SDWebImage' , :git => 'https://github.com/zhangxiaofeng02/SDWebImage', :branch => 'master'
 xcodeproj 'LFLToolsLib/LFLToolsLib.xcodeproj'
 end

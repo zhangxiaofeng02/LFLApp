@@ -36,7 +36,7 @@
 
 - (void)configCellWithDictionary:(NSDictionary *)dict {
     NSString *title = dict[@"title"] == nil ? @"" : dict[@"title"];
-    NSString *icon = dict[@"icon"] == nil ? @"" : dict[@"icon"];
+//    NSString *icon = dict[@"icon"] == nil ? @"" : dict[@"icon"];
     NSString *location = dict[@"location"];
     [self.titleLabel setText:title];
     if (location && location.length) {
