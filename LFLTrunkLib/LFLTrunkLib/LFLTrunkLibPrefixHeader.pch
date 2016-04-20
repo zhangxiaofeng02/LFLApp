@@ -24,5 +24,6 @@
     #import "LFLToolsLib.h"
     //fetcher
     #import "LFLFetcherLib.h"
-
+    //ReactiveCocoa
+    #import <ReactiveCocoa.h>
 #endif

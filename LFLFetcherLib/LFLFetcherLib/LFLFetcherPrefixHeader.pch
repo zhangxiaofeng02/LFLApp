@@ -23,6 +23,9 @@
     //MagicalRecord
     #import <MagicalRecord/MagicalRecord.h>
 
+    //ReactiveCocoa
+    #import <ReactiveCocoa.h>
+
     //URL工厂
     #import "LFLURLMaker.h"
 
