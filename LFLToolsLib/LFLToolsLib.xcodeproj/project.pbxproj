@@ -19,7 +19,7 @@
 		E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */; };
 		E1096CEA1CB62ADA00484BDB /* LFLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */; };
 		E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */; };
-		E16A6EF41CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */; };
+		EAD320BF45B7C78C64472BD1 /* libPods-LFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FFC80D619747ADE32A2351 /* libPods-LFLToolsLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,8 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8BF92D0C81DE609AA6F92E07 /* Pods-LFLToolsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.debug.xcconfig"; sourceTree = "<group>"; };
-		9044383A37C1B1C87C3F48B0 /* Pods-LFLToolsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.release.xcconfig"; sourceTree = "<group>"; };
+		480EAB06E417B21191EFDF3C /* Pods-LFLToolsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.debug.xcconfig"; sourceTree = "<group>"; };
+		54383149A74F3306A450850B /* Pods-LFLToolsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.release.xcconfig"; sourceTree = "<group>"; };
+		55FFC80D619747ADE32A2351 /* libPods-LFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLToolsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1096C9A1CB610D300484BDB /* libLFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLToolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1096C9D1CB610D300484BDB /* LFLToolsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLToolsLib.h; sourceTree = "<group>"; };
 		E1096C9F1CB610D300484BDB /* LFLToolsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLToolsLib.m; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseViewController.m; sourceTree = "<group>"; };
 		E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LFLRegister.h"; sourceTree = "<group>"; };
 		E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LFLRegister.m"; sourceTree = "<group>"; };
-		E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LFLToolsLib.a"; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphonesimulator/libPods-LFLToolsLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,18 +70,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16A6EF41CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a in Frameworks */,
+				EAD320BF45B7C78C64472BD1 /* libPods-LFLToolsLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E106E4F9D0D13FEDE02CE3D /* Pods */ = {
+		14A9BF27C39A648D18EDFF84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8BF92D0C81DE609AA6F92E07 /* Pods-LFLToolsLib.debug.xcconfig */,
-				9044383A37C1B1C87C3F48B0 /* Pods-LFLToolsLib.release.xcconfig */,
+				55FFC80D619747ADE32A2351 /* libPods-LFLToolsLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBA4EF5C9222B94B999DDD0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				480EAB06E417B21191EFDF3C /* Pods-LFLToolsLib.debug.xcconfig */,
+				54383149A74F3306A450850B /* Pods-LFLToolsLib.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -93,8 +101,8 @@
 				E1096CAF1CB6146800484BDB /* LFLSrc */,
 				E1096CB01CB6146800484BDB /* ThirdLibs */,
 				E1096C9B1CB610D300484BDB /* Products */,
-				3E106E4F9D0D13FEDE02CE3D /* Pods */,
-				FA6173948A5E3D6AF7FE27FB /* Frameworks */,
+				BBA4EF5C9222B94B999DDD0E /* Pods */,
+				14A9BF27C39A648D18EDFF84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,14 +182,6 @@
 			path = Categroy;
 			sourceTree = "<group>";
 		};
-		FA6173948A5E3D6AF7FE27FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,11 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1096CA31CB610D300484BDB /* Build configuration list for PBXNativeTarget "LFLToolsLib" */;
 			buildPhases = (
-				7B3720449FB13D38A9765436 /* Check Pods Manifest.lock */,
+				16C3FABF4ACDF96880AB0C8C /* Check Pods Manifest.lock */,
 				E1096C961CB610D300484BDB /* Sources */,
 				E1096C971CB610D300484BDB /* Frameworks */,
 				E1096C981CB610D300484BDB /* CopyFiles */,
-				04C8525BDBA3A0CBBC7D0816 /* Copy Pods Resources */,
+				BF769208651EB37C07A08A12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,22 +236,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04C8525BDBA3A0CBBC7D0816 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B3720449FB13D38A9765436 /* Check Pods Manifest.lock */ = {
+		16C3FABF4ACDF96880AB0C8C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,6 +249,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF769208651EB37C07A08A12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -374,7 +374,7 @@
 		};
 		E1096CA41CB610D300484BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BF92D0C81DE609AA6F92E07 /* Pods-LFLToolsLib.debug.xcconfig */;
+			baseConfigurationReference = 480EAB06E417B21191EFDF3C /* Pods-LFLToolsLib.debug.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -392,7 +392,7 @@
 		};
 		E1096CA51CB610D300484BDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9044383A37C1B1C87C3F48B0 /* Pods-LFLToolsLib.release.xcconfig */;
+			baseConfigurationReference = 54383149A74F3306A450850B /* Pods-LFLToolsLib.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLToolsLib/LFLToolsLibPrefixHeader.pch;
