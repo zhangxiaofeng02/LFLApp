@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		188594E5DE097DBDB48421D9 /* libPods-LFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D9F6FB594C6F665CB66553 /* libPods-LFLToolsLib.a */; };
 		E1096C9E1CB610D300484BDB /* LFLToolsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1096C9D1CB610D300484BDB /* LFLToolsLib.h */; };
 		E1096CA01CB610D300484BDB /* LFLToolsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096C9F1CB610D300484BDB /* LFLToolsLib.m */; };
 		E1096CB41CB6153300484BDB /* LFLGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CB31CB6153300484BDB /* LFLGlobal.m */; };
@@ -20,6 +19,7 @@
 		E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */; };
 		E1096CEA1CB62ADA00484BDB /* LFLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */; };
 		E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */; };
+		E16A6EF41CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		74D9F6FB594C6F665CB66553 /* libPods-LFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLToolsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF92D0C81DE609AA6F92E07 /* Pods-LFLToolsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.debug.xcconfig"; sourceTree = "<group>"; };
 		9044383A37C1B1C87C3F48B0 /* Pods-LFLToolsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.release.xcconfig"; sourceTree = "<group>"; };
 		E1096C9A1CB610D300484BDB /* libLFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLToolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +62,7 @@
 		E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseViewController.m; sourceTree = "<group>"; };
 		E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LFLRegister.h"; sourceTree = "<group>"; };
 		E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LFLRegister.m"; sourceTree = "<group>"; };
+		E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LFLToolsLib.a"; path = "../../../Library/Developer/Xcode/DerivedData/LFLAppWorkSpace-ejyzoodbxbdiilghagyqlrzmvpyr/Build/Products/Debug-iphonesimulator/libPods-LFLToolsLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188594E5DE097DBDB48421D9 /* libPods-LFLToolsLib.a in Frameworks */,
+				E16A6EF41CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 		FA6173948A5E3D6AF7FE27FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74D9F6FB594C6F665CB66553 /* libPods-LFLToolsLib.a */,
+				E16A6EF31CC7D6E1008AC5A7 /* libPods-LFLToolsLib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,11 +381,12 @@
 				GCC_PREFIX_HEADER = LFLToolsLib/LFLToolsLibPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
-					"$(inherited)",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -397,11 +398,12 @@
 				GCC_PREFIX_HEADER = LFLToolsLib/LFLToolsLibPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
-					"$(inherited)",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
