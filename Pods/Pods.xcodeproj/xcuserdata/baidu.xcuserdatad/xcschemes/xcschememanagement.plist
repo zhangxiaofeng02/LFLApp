@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,22 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C40F24EA7494EBCDCEE227FB4701376</key>
+		<key>09FA060F1A0492FB25232F489AC4E573</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2ED8F72C6A665EC6F7E63760867EEA94</key>
+		<key>28528F9A03429E14BC286F1EF1708760</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B2190F3519CE178532885A27D6EEE7F</key>
+		<key>8E434BA8E39C97E53BD9BC19F13114B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F65E00D8331122A6167FB9BA2DF04DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

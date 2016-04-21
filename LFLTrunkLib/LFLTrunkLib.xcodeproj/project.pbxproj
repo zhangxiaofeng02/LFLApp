@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A19B2DEE1F32DF67D502AAD /* libPods-LFLTrunkLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */; };
+		E107070C1CC89CCE00D716D6 /* LFLUserCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E107070B1CC89CCE00D716D6 /* LFLUserCenterViewModel.m */; };
+		E10707171CC8A00000D716D6 /* LFLUserCenterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10707161CC8A00000D716D6 /* LFLUserCenterModel.m */; };
 		E1096D001CB6437C00484BDB /* lfl_user_center_go_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1096CFE1CB6437C00484BDB /* lfl_user_center_go_icon@2x.png */; };
 		E1096D011CB6437C00484BDB /* lfl_user_center_go_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */; };
 		E1096D0E1CB64F4500484BDB /* LFLUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D0A1CB64F4500484BDB /* LFLUserCenterViewController.m */; };
@@ -64,6 +66,10 @@
 /* Begin PBXFileReference section */
 		00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLTrunkLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC311659326FCCC57656C12D /* Pods-LFLTrunkLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLTrunkLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLTrunkLib/Pods-LFLTrunkLib.debug.xcconfig"; sourceTree = "<group>"; };
+		E107070A1CC89CCE00D716D6 /* LFLUserCenterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserCenterViewModel.h; sourceTree = "<group>"; };
+		E107070B1CC89CCE00D716D6 /* LFLUserCenterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLUserCenterViewModel.m; sourceTree = "<group>"; };
+		E10707151CC8A00000D716D6 /* LFLUserCenterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserCenterModel.h; sourceTree = "<group>"; };
+		E10707161CC8A00000D716D6 /* LFLUserCenterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLUserCenterModel.m; sourceTree = "<group>"; };
 		E1096CFE1CB6437C00484BDB /* lfl_user_center_go_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lfl_user_center_go_icon@2x.png"; sourceTree = "<group>"; };
 		E1096CFF1CB6437C00484BDB /* lfl_user_center_go_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lfl_user_center_go_icon@3x.png"; sourceTree = "<group>"; };
 		E1096D091CB64F4500484BDB /* LFLUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLUserCenterViewController.h; sourceTree = "<group>"; };
@@ -124,6 +130,40 @@
 				00F6D0BCA080FA6597E508E8 /* libPods-LFLTrunkLib.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10707081CC89C8E00D716D6 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E10707091CC89CAE00D716D6 /* 个人中心 */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E10707091CC89CAE00D716D6 /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E107070A1CC89CCE00D716D6 /* LFLUserCenterViewModel.h */,
+				E107070B1CC89CCE00D716D6 /* LFLUserCenterViewModel.m */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		E107070D1CC89E1A00D716D6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E10707141CC89FDD00D716D6 /* 个人中心 */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E10707141CC89FDD00D716D6 /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E10707151CC8A00000D716D6 /* LFLUserCenterModel.h */,
+				E10707161CC8A00000D716D6 /* LFLUserCenterModel.m */,
+			);
+			path = "个人中心";
 			sourceTree = "<group>";
 		};
 		E1096D061CB64F0D00484BDB /* controller */ = {
@@ -225,6 +265,8 @@
 		E1CD9A131CB29E6800580FDC /* LFLSrc */ = {
 			isa = PBXGroup;
 			children = (
+				E107070D1CC89E1A00D716D6 /* model */,
+				E10707081CC89C8E00D716D6 /* viewmodel */,
 				E1096D061CB64F0D00484BDB /* controller */,
 				E1096D071CB64F0D00484BDB /* ui */,
 			);
@@ -398,10 +440,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1096D0E1CB64F4500484BDB /* LFLUserCenterViewController.m in Sources */,
+				E107070C1CC89CCE00D716D6 /* LFLUserCenterViewModel.m in Sources */,
 				E1096D1A1CB64F7E00484BDB /* LFLTestAppController.m in Sources */,
 				E1CD99FC1CB29B2D00580FDC /* LFLTrunkLib.m in Sources */,
 				E1096D141CB64F4A00484BDB /* LFLUserCenterCustomTableViewCell.m in Sources */,
 				E1CD9A3B1CB2B4EA00580FDC /* LFLTrunkBundle.m in Sources */,
+				E10707171CC8A00000D716D6 /* LFLUserCenterModel.m in Sources */,
 				E1096D0F1CB64F4500484BDB /* LFLMainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

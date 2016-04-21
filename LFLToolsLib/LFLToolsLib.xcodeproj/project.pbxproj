@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10706FC1CC8851800D716D6 /* Easy_Runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706E91CC8851800D716D6 /* Easy_Runtime.mm */; };
+		E10706FD1CC8851800D716D6 /* NSArray+EasyExtend.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706EC1CC8851800D716D6 /* NSArray+EasyExtend.mm */; };
+		E10706FE1CC8851800D716D6 /* NSData+EasyExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E10706EE1CC8851800D716D6 /* NSData+EasyExtend.m */; };
+		E10706FF1CC8851800D716D6 /* NSDictionary+EasyExtend.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706F01CC8851800D716D6 /* NSDictionary+EasyExtend.mm */; };
+		E10707001CC8851800D716D6 /* NSObject+EasyJSON.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706F21CC8851800D716D6 /* NSObject+EasyJSON.mm */; };
+		E10707011CC8851800D716D6 /* NSObject+EasyProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706F41CC8851800D716D6 /* NSObject+EasyProperty.mm */; };
+		E10707021CC8851800D716D6 /* NSObject+EasyTypeConversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E10706F61CC8851800D716D6 /* NSObject+EasyTypeConversion.mm */; };
+		E10707031CC8851800D716D6 /* NSString+EasyExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E10706F81CC8851800D716D6 /* NSString+EasyExtend.m */; };
+		E10707041CC8851800D716D6 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = E10706FA1CC8851800D716D6 /* pinyin.m */; };
 		E1096C9E1CB610D300484BDB /* LFLToolsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1096C9D1CB610D300484BDB /* LFLToolsLib.h */; };
 		E1096CA01CB610D300484BDB /* LFLToolsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096C9F1CB610D300484BDB /* LFLToolsLib.m */; };
 		E1096CB41CB6153300484BDB /* LFLGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CB31CB6153300484BDB /* LFLGlobal.m */; };
@@ -39,6 +48,26 @@
 		480EAB06E417B21191EFDF3C /* Pods-LFLToolsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.debug.xcconfig"; sourceTree = "<group>"; };
 		54383149A74F3306A450850B /* Pods-LFLToolsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLToolsLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LFLToolsLib/Pods-LFLToolsLib.release.xcconfig"; sourceTree = "<group>"; };
 		55FFC80D619747ADE32A2351 /* libPods-LFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFLToolsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10706E81CC8851800D716D6 /* Easy_Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Easy_Runtime.h; sourceTree = "<group>"; };
+		E10706E91CC8851800D716D6 /* Easy_Runtime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Easy_Runtime.mm; sourceTree = "<group>"; };
+		E10706EA1CC8851800D716D6 /* EasyTransModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTransModel.h; sourceTree = "<group>"; };
+		E10706EB1CC8851800D716D6 /* NSArray+EasyExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+EasyExtend.h"; sourceTree = "<group>"; };
+		E10706EC1CC8851800D716D6 /* NSArray+EasyExtend.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+EasyExtend.mm"; sourceTree = "<group>"; };
+		E10706ED1CC8851800D716D6 /* NSData+EasyExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+EasyExtend.h"; sourceTree = "<group>"; };
+		E10706EE1CC8851800D716D6 /* NSData+EasyExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+EasyExtend.m"; sourceTree = "<group>"; };
+		E10706EF1CC8851800D716D6 /* NSDictionary+EasyExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EasyExtend.h"; sourceTree = "<group>"; };
+		E10706F01CC8851800D716D6 /* NSDictionary+EasyExtend.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDictionary+EasyExtend.mm"; sourceTree = "<group>"; };
+		E10706F11CC8851800D716D6 /* NSObject+EasyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EasyJSON.h"; sourceTree = "<group>"; };
+		E10706F21CC8851800D716D6 /* NSObject+EasyJSON.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+EasyJSON.mm"; sourceTree = "<group>"; };
+		E10706F31CC8851800D716D6 /* NSObject+EasyProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EasyProperty.h"; sourceTree = "<group>"; };
+		E10706F41CC8851800D716D6 /* NSObject+EasyProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+EasyProperty.mm"; sourceTree = "<group>"; };
+		E10706F51CC8851800D716D6 /* NSObject+EasyTypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EasyTypeConversion.h"; sourceTree = "<group>"; };
+		E10706F61CC8851800D716D6 /* NSObject+EasyTypeConversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+EasyTypeConversion.mm"; sourceTree = "<group>"; };
+		E10706F71CC8851800D716D6 /* NSString+EasyExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EasyExtend.h"; sourceTree = "<group>"; };
+		E10706F81CC8851800D716D6 /* NSString+EasyExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EasyExtend.m"; sourceTree = "<group>"; };
+		E10706F91CC8851800D716D6 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		E10706FA1CC8851800D716D6 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
+		E10706FB1CC8851800D716D6 /* SingletonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonHelper.h; sourceTree = "<group>"; };
 		E1096C9A1CB610D300484BDB /* libLFLToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFLToolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1096C9D1CB610D300484BDB /* LFLToolsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLToolsLib.h; sourceTree = "<group>"; };
 		E1096C9F1CB610D300484BDB /* LFLToolsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLToolsLib.m; sourceTree = "<group>"; };
@@ -94,6 +123,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E10706E71CC8851800D716D6 /* Easy数据操作 */ = {
+			isa = PBXGroup;
+			children = (
+				E10706E81CC8851800D716D6 /* Easy_Runtime.h */,
+				E10706E91CC8851800D716D6 /* Easy_Runtime.mm */,
+				E10706EA1CC8851800D716D6 /* EasyTransModel.h */,
+				E10706EB1CC8851800D716D6 /* NSArray+EasyExtend.h */,
+				E10706EC1CC8851800D716D6 /* NSArray+EasyExtend.mm */,
+				E10706ED1CC8851800D716D6 /* NSData+EasyExtend.h */,
+				E10706EE1CC8851800D716D6 /* NSData+EasyExtend.m */,
+				E10706EF1CC8851800D716D6 /* NSDictionary+EasyExtend.h */,
+				E10706F01CC8851800D716D6 /* NSDictionary+EasyExtend.mm */,
+				E10706F11CC8851800D716D6 /* NSObject+EasyJSON.h */,
+				E10706F21CC8851800D716D6 /* NSObject+EasyJSON.mm */,
+				E10706F31CC8851800D716D6 /* NSObject+EasyProperty.h */,
+				E10706F41CC8851800D716D6 /* NSObject+EasyProperty.mm */,
+				E10706F51CC8851800D716D6 /* NSObject+EasyTypeConversion.h */,
+				E10706F61CC8851800D716D6 /* NSObject+EasyTypeConversion.mm */,
+				E10706F71CC8851800D716D6 /* NSString+EasyExtend.h */,
+				E10706F81CC8851800D716D6 /* NSString+EasyExtend.m */,
+				E10706F91CC8851800D716D6 /* pinyin.h */,
+				E10706FA1CC8851800D716D6 /* pinyin.m */,
+				E10706FB1CC8851800D716D6 /* SingletonHelper.h */,
+			);
+			path = "Easy数据操作";
+			sourceTree = "<group>";
+		};
 		E1096C911CB610D200484BDB = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +194,7 @@
 		E1096CB01CB6146800484BDB /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				E10706E71CC8851800D716D6 /* Easy数据操作 */,
 				E1096CB51CB615BB00484BDB /* TPKeyboard */,
 			);
 			path = ThirdLibs;
@@ -273,13 +330,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10707011CC8851800D716D6 /* NSObject+EasyProperty.mm in Sources */,
+				E10707031CC8851800D716D6 /* NSString+EasyExtend.m in Sources */,
 				E1096CA01CB610D300484BDB /* LFLToolsLib.m in Sources */,
 				E1096CE81CB62ADA00484BDB /* LFLBaseTableView.m in Sources */,
+				E10706FE1CC8851800D716D6 /* NSData+EasyExtend.m in Sources */,
 				E1096CEA1CB62ADA00484BDB /* LFLBaseViewController.m in Sources */,
+				E10706FD1CC8851800D716D6 /* NSArray+EasyExtend.mm in Sources */,
 				E1096CE71CB62ADA00484BDB /* LFLBaseNavigationController.m in Sources */,
+				E10706FC1CC8851800D716D6 /* Easy_Runtime.mm in Sources */,
+				E10706FF1CC8851800D716D6 /* NSDictionary+EasyExtend.mm in Sources */,
+				E10707041CC8851800D716D6 /* pinyin.m in Sources */,
 				E1096CDA1CB62A2700484BDB /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				E1096CC01CB615C300484BDB /* TPKeyboardAvoidingTableView.m in Sources */,
 				E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */,
+				E10707001CC8851800D716D6 /* NSObject+EasyJSON.mm in Sources */,
+				E10707021CC8851800D716D6 /* NSObject+EasyTypeConversion.mm in Sources */,
 				E1096CBF1CB615C300484BDB /* TPKeyboardAvoidingScrollView.m in Sources */,
 				E1096CBE1CB615C300484BDB /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */,

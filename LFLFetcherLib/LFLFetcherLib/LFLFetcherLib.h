@@ -20,7 +20,11 @@
 #import "NSManagedObject+LFLExtend.h"
 //NSManagerObject
 #import "LFLUserInfo.h"
-
+//MVVM
+#import "LFLBaseAction.h"
+#import "LFLBaseRequest.h"
+#import "LFLBaseViewModel.h"
+#import "LFLBaseModel.h"
 @interface LFLFetcherLib : NSObject
 
 @end

@@ -66,7 +66,7 @@ withSuccessHandler:(LFLRequestSuccess)success
     AFHTTPSessionManager *manager = [self configManagerWithHeader:header isSerializer:serial];
     
     NSURL *url = [NSURL URLWithString:urlStr];
-    if (!url) {
+    if (!url || !urlStr || urlStr.length == 0) {
         debugAssert(@"url不正确");
     }
     WeakSelf;
