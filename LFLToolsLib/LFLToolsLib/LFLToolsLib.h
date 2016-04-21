@@ -19,5 +19,8 @@
 //category
 #import "UITableView+LFLRegister.h"
 
+//easy model
+#import "EasyTransModel.h"
+
 @interface LFLToolsLib : NSObject
 @end

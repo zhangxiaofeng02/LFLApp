@@ -9,6 +9,7 @@ platform:ios , '7.0'
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'AFNetworking', '~> 3.0'
 pod 'MagicalRecord'
+pod 'JSONModel'
 pod 'SDWebImage' , :git => 'https://github.com/zhangxiaofeng02/SDWebImage', :branch => 'master'
 xcodeproj 'LFLTrunkLib/LFLTrunkLib.xcodeproj'
 end
@@ -18,6 +19,7 @@ platform:ios , '7.0'
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'AFNetworking', '~> 3.0'
 pod 'MagicalRecord'
+pod 'JSONModel'
 xcodeproj 'LFLFetcherLib/LFLFetcherLib.xcodeproj'
 end
 

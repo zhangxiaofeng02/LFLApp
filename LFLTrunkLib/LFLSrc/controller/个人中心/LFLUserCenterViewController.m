@@ -11,11 +11,14 @@
 #import "LFLFetcher+CoreData.h"
 #import "LFLUserInfo.h"
 #import <MagicalRecord/MagicalRecord.h>
+#import "LFLUserCenterViewModel.h"
+#import "LFLUserCenterModel.h"
 
 @interface LFLUserCenterViewController()
 
 @property (nonatomic, strong) NSArray *dataArr;
 @property (nonatomic, strong) LFLFetcher *fetcher;
+@property (nonatomic, strong) LFLUserCenterViewModel *viewModel;
 @end
 
 @implementation LFLUserCenterViewController
@@ -30,6 +33,60 @@
     [self registerCell];
     
     self.fetcher = [[LFLFetcherManager shareInstance] fetcherWithObject:self];
+    
+    [self addRAC];
+    [self testGet];
+}
+
+#pragma mark MVVM
+- (void)addRAC {
+    @weakify(self);
+    [RACObserve(self.viewModel,model)
+     subscribeNext:^(LFLUserCenterModel *model) {
+         @strongify(self)
+         [self updateUI];
+     }];
+    
+    [RACObserve(self.viewModel.getTestRequest, state) subscribeNext:^(NSString *state) {
+        @strongify(self)
+        if (self.viewModel.getTestRequest.failed) {
+            LFLLog(@"failed");
+        } else if (self.viewModel.getTestRequest.sending) {
+            LFLLog(@"sending");
+        } else if (self.viewModel.getTestRequest.success) {
+            [self.viewModel loadNewData];
+        }
+    }];
+    
+    [RACObserve(self.viewModel.postTestRequest, state) subscribeNext:^(NSString *state) {
+        @strongify(self);
+        if (self.viewModel.postTestRequest.failed) {
+            LFLLog(@"failed");
+        } else if (self.viewModel.postTestRequest.sending) {
+            LFLLog(@"sending");
+        } else if (self.viewModel.getTestRequest.success) {
+            LFLLog(@"success");
+        }
+    }];
+}
+
+- (void)testPost {
+    self.viewModel.postTestRequest.requestNeedActive = YES;
+}
+
+- (void)testGet {
+    self.viewModel.getTestRequest.requestNeedActive = YES;
+}
+
+- (void)updateUI {
+    LFLLog(@"success");
+}
+
+- (LFLUserCenterViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [LFLUserCenterViewModel viewModelWithOwner:self];
+    }
+    return _viewModel;
 }
 
 #pragma mark - 注册cell
@@ -86,17 +143,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([indexPath section] == 3) {
-//        [self.fetcher getFromUrl:@"http://apistore.baidu.com/microservice/cityinfo?cityname=beijing"
-//                     withParamer:nil
-//               withRequestHeader:nil
-//                   inSerialQueue:YES
-//             withProgressHandler:nil
-//              withSuccessHandler:^(NSDictionary *dict,NSError *error) {
-//                  LFLLog(@"1");
-//              }
-//               withFailedHandler:^(NSError *error) {
-//                   LFLLog(@"2");
-//               }];
         NSDictionary *postDict = @{ @"urls": @"http://www.henishuo.com/git-use-inwork/",
                                     @"goal" : @"site",
                                     @"total" : @(123)

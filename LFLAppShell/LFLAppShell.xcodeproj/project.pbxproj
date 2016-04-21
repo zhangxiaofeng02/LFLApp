@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10707061CC89B1300D716D6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E10707051CC89B1300D716D6 /* libc++.tbd */; };
 		E1096CAE1CB6143700484BDB /* libLFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1096CAB1CB6142200484BDB /* libLFLToolsLib.a */; };
 		E1096CD01CB622E100484BDB /* libLFLTrunkLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CD9A101CB29CE100580FDC /* libLFLTrunkLib.a */; };
 		E1CD99CB1CB292F200580FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD99CA1CB292F200580FDC /* main.m */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E10707051CC89B1300D716D6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		E1096CA61CB6142200484BDB /* LFLToolsLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LFLToolsLib.xcodeproj; path = ../../../LFLToolsLib/LFLToolsLib.xcodeproj; sourceTree = "<group>"; };
 		E1CD99C61CB292F200580FDC /* LFLAppShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFLAppShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CD99CA1CB292F200580FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10707061CC89B1300D716D6 /* libc++.tbd in Frameworks */,
 				E1096CAE1CB6143700484BDB /* libLFLToolsLib.a in Frameworks */,
 				E1096CD01CB622E100484BDB /* libLFLTrunkLib.a in Frameworks */,
 			);
@@ -138,6 +141,7 @@
 		E1CD9A041CB29BB100580FDC /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				E10707051CC89B1300D716D6 /* libc++.tbd */,
 				E1096CA61CB6142200484BDB /* LFLToolsLib.xcodeproj */,
 				E1CD9A0B1CB29CE100580FDC /* LFLTrunkLib.xcodeproj */,
 			);
