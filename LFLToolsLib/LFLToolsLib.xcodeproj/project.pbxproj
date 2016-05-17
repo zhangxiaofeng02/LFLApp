@@ -28,6 +28,11 @@
 		E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */; };
 		E1096CEA1CB62ADA00484BDB /* LFLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */; };
 		E1096D051CB6446F00484BDB /* UITableView+LFLRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */; };
+		E16EED151CE9B4ED000CF2BD /* LFLBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16EED141CE9B4ED000CF2BD /* LFLBaseCollectionViewController.m */; };
+		E16EED181CE9B610000CF2BD /* LFLBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16EED171CE9B610000CF2BD /* LFLBaseCollectionView.m */; };
+		E16EED281CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E16EED271CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.m */; };
+		E16EED391CE9E56C000CF2BD /* UICollectionView+LFLRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = E16EED381CE9E56C000CF2BD /* UICollectionView+LFLRegister.m */; };
+		E16EED491CEAB84F000CF2BD /* NSString+LFLExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = E16EED481CEAB84F000CF2BD /* NSString+LFLExtention.m */; };
 		EAD320BF45B7C78C64472BD1 /* libPods-LFLToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FFC80D619747ADE32A2351 /* libPods-LFLToolsLib.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +97,16 @@
 		E1096CE61CB62ADA00484BDB /* LFLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseViewController.m; sourceTree = "<group>"; };
 		E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LFLRegister.h"; sourceTree = "<group>"; };
 		E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LFLRegister.m"; sourceTree = "<group>"; };
+		E16EED131CE9B4ED000CF2BD /* LFLBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLBaseCollectionViewController.h; sourceTree = "<group>"; };
+		E16EED141CE9B4ED000CF2BD /* LFLBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseCollectionViewController.m; sourceTree = "<group>"; };
+		E16EED161CE9B610000CF2BD /* LFLBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLBaseCollectionView.h; sourceTree = "<group>"; };
+		E16EED171CE9B610000CF2BD /* LFLBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLBaseCollectionView.m; sourceTree = "<group>"; };
+		E16EED261CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
+		E16EED271CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
+		E16EED371CE9E56C000CF2BD /* UICollectionView+LFLRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+LFLRegister.h"; sourceTree = "<group>"; };
+		E16EED381CE9E56C000CF2BD /* UICollectionView+LFLRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+LFLRegister.m"; sourceTree = "<group>"; };
+		E16EED471CEAB84F000CF2BD /* NSString+LFLExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LFLExtention.h"; sourceTree = "<group>"; };
+		E16EED481CEAB84F000CF2BD /* NSString+LFLExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LFLExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +241,10 @@
 				E1096CE41CB62AD900484BDB /* LFLBaseTableViewController.m */,
 				E1096CE11CB62AD900484BDB /* LFLBaseTableView.h */,
 				E1096CE21CB62AD900484BDB /* LFLBaseTableView.m */,
+				E16EED131CE9B4ED000CF2BD /* LFLBaseCollectionViewController.h */,
+				E16EED141CE9B4ED000CF2BD /* LFLBaseCollectionViewController.m */,
+				E16EED161CE9B610000CF2BD /* LFLBaseCollectionView.h */,
+				E16EED171CE9B610000CF2BD /* LFLBaseCollectionView.m */,
 			);
 			path = LFLBaseView;
 			sourceTree = "<group>";
@@ -233,8 +252,14 @@
 		E1096D021CB6444000484BDB /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
+				E16EED371CE9E56C000CF2BD /* UICollectionView+LFLRegister.h */,
+				E16EED381CE9E56C000CF2BD /* UICollectionView+LFLRegister.m */,
 				E1096D031CB6446F00484BDB /* UITableView+LFLRegister.h */,
 				E1096D041CB6446F00484BDB /* UITableView+LFLRegister.m */,
+				E16EED261CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.h */,
+				E16EED271CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.m */,
+				E16EED471CEAB84F000CF2BD /* NSString+LFLExtention.h */,
+				E16EED481CEAB84F000CF2BD /* NSString+LFLExtention.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -330,8 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16EED181CE9B610000CF2BD /* LFLBaseCollectionView.m in Sources */,
+				E16EED281CE9CC53000CF2BD /* UINavigationBar+BackgroundColor.m in Sources */,
 				E10707011CC8851800D716D6 /* NSObject+EasyProperty.mm in Sources */,
 				E10707031CC8851800D716D6 /* NSString+EasyExtend.m in Sources */,
+				E16EED391CE9E56C000CF2BD /* UICollectionView+LFLRegister.m in Sources */,
 				E1096CA01CB610D300484BDB /* LFLToolsLib.m in Sources */,
 				E1096CE81CB62ADA00484BDB /* LFLBaseTableView.m in Sources */,
 				E10706FE1CC8851800D716D6 /* NSData+EasyExtend.m in Sources */,
@@ -343,6 +371,8 @@
 				E10707041CC8851800D716D6 /* pinyin.m in Sources */,
 				E1096CDA1CB62A2700484BDB /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				E1096CC01CB615C300484BDB /* TPKeyboardAvoidingTableView.m in Sources */,
+				E16EED151CE9B4ED000CF2BD /* LFLBaseCollectionViewController.m in Sources */,
+				E16EED491CEAB84F000CF2BD /* NSString+LFLExtention.m in Sources */,
 				E1096CE91CB62ADA00484BDB /* LFLBaseTableViewController.m in Sources */,
 				E10707001CC8851800D716D6 /* NSObject+EasyJSON.mm in Sources */,
 				E10707021CC8851800D716D6 /* NSObject+EasyTypeConversion.mm in Sources */,

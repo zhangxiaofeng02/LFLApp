@@ -26,4 +26,6 @@
     #import "LFLFetcherLib.h"
     //ReactiveCocoa
     #import <ReactiveCocoa.h>
+    //LocalDataSource
+    #import "LFLLocalDataSource.h"
 #endif

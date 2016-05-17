@@ -191,6 +191,7 @@
 				TargetAttributes = {
 					E1CD99C51CB292F200580FDC = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q8KS4DBYR3;
 					};
 				};
 			};
@@ -394,6 +395,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "./../LFLToolsLib/ThirdLibs/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
@@ -411,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -419,6 +423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "./../LFLToolsLib/ThirdLibs/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LFLAppShell/LFLAppShellPrefixHeader.pch;
@@ -436,6 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxf.leaf.LFLAppShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;

@@ -11,6 +11,7 @@
 #import "LFLUserCenterViewController.h"
 #import "LFLFetcher.h"
 #import "LFLFetcherManager.h"
+#import "LFLDiscoverViewController.h"
 
 @interface LFLMainTabBarController ()
 
@@ -31,15 +32,15 @@
 }
 
 - (void)initChildControllers {
-    LFLTestAppController *vc = [[LFLTestAppController alloc] init];
-    [self addChildController:vc image:@"test" selectedImageName:@"test" title:@"精选"];
+    LFLDiscoverViewController *discoverViewController = [[LFLDiscoverViewController alloc] init];
+    [self addChildController:discoverViewController image:@"test" selectedImageName:@"test" title:@"发现"];
     
     LFLTestAppController *vc2 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc2 image:@"test" selectedImageName:@"test" title:@"客服"];
+    [self addChildController:vc2 image:@"test" selectedImageName:@"test" title:@"书架"];
 
     
     LFLTestAppController *vc3 = [[LFLTestAppController alloc] init];
-    [self addChildController:vc3 image:@"test" selectedImageName:@"test" title:@"发现"];
+    [self addChildController:vc3 image:@"test" selectedImageName:@"test" title:@"想法"];
 
     LFLUserCenterViewController *userCenterViewController = [[LFLUserCenterViewController alloc] init];
     [self addChildController:userCenterViewController image:@"test" selectedImageName:@"test" title:@"我"];
