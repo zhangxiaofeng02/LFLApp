@@ -10,4 +10,5 @@
 
 @interface LFLBaseViewController : UIViewController
 
+- (UIImageView *)LFLFindHairlineImageViewUnder:(UIView *)view;
 @end

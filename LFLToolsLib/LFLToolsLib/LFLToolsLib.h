@@ -18,6 +18,9 @@
 
 //category
 #import "UITableView+LFLRegister.h"
+#import "UINavigationBar+BackgroundColor.h"
+#import "UICollectionView+LFLRegister.h"
+#import "NSString+LFLExtention.h"
 
 //easy model
 #import "EasyTransModel.h"

@@ -27,6 +27,10 @@
 #define ScreenHeight [[UIScreen mainScreen]bounds].size.height
 #define ScreenScale [UIScreen mainScreen].scale
 
+//通用高度
+#define NagivationBarHeight 64
+#define TabBarHeight 49
+
 //颜色
 #define Color(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
@@ -40,5 +44,11 @@
 #define LFL_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch]!=NSOrderedAscending)
 #define LFL_SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch]==NSOrderedAscending)
 #define LFL_SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch]!=NSOrderedDescending)
+
+//判断设备类型
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(320, 480), CGSizeMake(ScreenWidth, ScreenHeight)) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(320, 568), CGSizeMake(ScreenWidth, ScreenHeight)) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(375, 667), CGSizeMake(ScreenWidth, ScreenHeight)) : NO)
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(414, 736), CGSizeMake(ScreenWidth, ScreenHeight)) : NO)
 @interface LFLGlobal : NSObject
 @end
